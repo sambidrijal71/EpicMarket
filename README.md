@@ -1,4 +1,4 @@
-#EPICMARKET - ECommerce Website
+# EPICMARKET - ECommerce Website
 
 ## ASP.NET Core with React Project
 
@@ -31,27 +31,27 @@ Before you begin, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/sambidrijal71/EpicMarket.git
-   ```
-
-2. ```bash
    cd server
-   dotnet restore
    ```
 
-````
+2. Install backend depencencies.
+
+```bash
+dotnet restore
+```
 
 ## Running the Application
 
 1. **Start the backend.**
+
 Once you are in the server directory, you can use below code to run the backend.
+
 ```bash
 dotnet watch --no-hot-reload
-````
-
-Alternatively, you can also use
-```bash
-dotnet run
-
 ```
 
+Alternatively, you can also use
+
+```bash
+dotnet run
 ```
