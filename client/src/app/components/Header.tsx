@@ -1,5 +1,6 @@
 import {
   AppBar,
+  Badge,
   Box,
   List,
   ListItem,
@@ -7,7 +8,8 @@ import {
   Toolbar,
   Typography,
 } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 interface Props {
   checked: boolean;
@@ -76,6 +78,15 @@ const Header = ({ checked, onThemeChange }: Props) => {
           </Box>
           <Box>
             <List sx={flexProperties}>
+              <Badge
+                badgeContent={4}
+                color='primary'
+                sx={{ mr: 2, ...navStyle }}
+                component={NavLink}
+                to='/cart'
+              >
+                <ShoppingCartIcon />
+              </Badge>
               {rightLinks.map(({ name, path }) => (
                 <ListItem key={name}>
                   <Typography

@@ -17,8 +17,11 @@ const App = () => {
     palette: {
       mode: paletteType,
       background: {
-        default: paletteType == 'dark' ? '#aaaa' : '#ff6',
+        default: paletteType == 'dark' ? '#212121' : '#fafafa',
       },
+    },
+    typography: {
+      fontFamily: 'Raleway, Arial',
     },
   });
 
@@ -30,7 +33,9 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Header checked={darkTheme} onThemeChange={handleThemeChange} />
-      <Container sx={{ height: '80vh' }}>
+      <Container
+        sx={{ display: 'flex', flexDirection: 'column', minHeight: '71vh' }}
+      >
         <Outlet />
       </Container>
       <Footer />

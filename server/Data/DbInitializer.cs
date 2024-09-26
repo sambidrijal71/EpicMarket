@@ -31,7 +31,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png"
+        Thumbnail= "beauty_Essence_Mascara_Lash_Princess"
     },
     new Product
     {
@@ -55,7 +55,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/thumbnail.png"
+        Thumbnail= "beauty_Eyeshadow_Palette_with_Mirror"
     },
     new Product
     {
@@ -79,7 +79,7 @@ ReturnPolicy= "60 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/thumbnail.png"
+        Thumbnail= "beauty_Powder_Canister"
     },
     new Product
     {
@@ -103,7 +103,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/thumbnail.png"
+        Thumbnail= "beauty_Red_Lipstick"
     },
     new Product
     {
@@ -127,7 +127,7 @@ ReturnPolicy= "No return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/beauty/Red%20Nail%20Polish/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/beauty/Red%20Nail%20Polish/thumbnail.png"
+        Thumbnail= "beauty_Red_Nail_Polish"
     },
     new Product
     {
@@ -153,7 +153,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/2.png",
             "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/thumbnail.png"
+        Thumbnail= "fragrances_Calvin_Klein_CK_One"
     },
     new Product
     {
@@ -179,7 +179,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/fragrances/Chanel%20Coco%20Noir%20Eau%20De/2.png",
             "https://cdn.dummyjson.com/products/images/fragrances/Chanel%20Coco%20Noir%20Eau%20De/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/fragrances/Chanel%20Coco%20Noir%20Eau%20De/thumbnail.png"
+        Thumbnail= "fragrances_Chanel_Coco_Noir_Eau_De"
     },
     new Product
     {
@@ -205,7 +205,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/2.png",
             "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/thumbnail.png"
+        Thumbnail= "fragrances_Dior_Jadore"
     },
     new Product
     {
@@ -231,7 +231,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/2.png",
             "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/thumbnail.png"
+        Thumbnail= "fragrances_Dolce_Shine_Eau_de"
     },
     new Product
     {
@@ -257,7 +257,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/fragrances/Gucci%20Bloom%20Eau%20de/2.png",
             "https://cdn.dummyjson.com/products/images/fragrances/Gucci%20Bloom%20Eau%20de/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/fragrances/Gucci%20Bloom%20Eau%20de/thumbnail.png"
+        Thumbnail= "fragrances_Gucci_Bloom_Eau_de"
     },
     new Product
     {
@@ -283,7 +283,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Bed/2.png",
             "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Bed/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Bed/thumbnail.png"
+        Thumbnail= "furniture_Annibale_Colombo_Bed"
     },
     new Product
     {
@@ -309,7 +309,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/2.png",
             "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/thumbnail.png"
+        Thumbnail= "furniture_Annibale_Colombo_Sofa"
     },
     new Product
     {
@@ -335,7 +335,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/2.png",
             "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/thumbnail.png"
+        Thumbnail= "furniture_Bedside_Table_African_Cherry"
     },
     new Product
     {
@@ -361,7 +361,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/2.png",
             "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/thumbnail.png"
+        Thumbnail= "furniture_Knoll_Saarinen_Executive_Conference_Chair"
     },
     new Product
     {
@@ -387,7 +387,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/2.png",
             "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/thumbnail.png"
+        Thumbnail= "furniture_Wooden_Bathroom_Sink_With_Mirror"
     },
     new Product
     {
@@ -410,7 +410,7 @@ ReturnPolicy= "60 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Apple/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Apple/thumbnail.png"
+        Thumbnail= "groceries_Apple"
     },
     new Product
     {
@@ -433,7 +433,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Beef%20Steak/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Beef%20Steak/thumbnail.png"
+        Thumbnail= "groceries_Beef_Steak"
     },
     new Product
     {
@@ -457,7 +457,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Cat%20Food/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Cat%20Food/thumbnail.png"
+        Thumbnail= "groceries_Cat_Food"
     },
     new Product
     {
@@ -481,7 +481,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/groceries/Chicken%20Meat/1.png",
             "https://cdn.dummyjson.com/products/images/groceries/Chicken%20Meat/2.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Chicken%20Meat/thumbnail.png"
+        Thumbnail= "groceries_Chicken_Meat"
     },
     new Product
     {
@@ -504,7 +504,7 @@ ReturnPolicy= "60 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Cooking%20Oil/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Cooking%20Oil/thumbnail.png"
+        Thumbnail= "groceries_Cooking_Oil"
     },
     new Product
     {
@@ -527,7 +527,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Cucumber/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Cucumber/thumbnail.png"
+        Thumbnail= "groceries_Cucumber"
     },
     new Product
     {
@@ -551,7 +551,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Dog%20Food/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Dog%20Food/thumbnail.png"
+        Thumbnail= "groceries_Dog_Food"
     },
     new Product
     {
@@ -574,7 +574,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Eggs/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Eggs/thumbnail.png"
+        Thumbnail= "groceries_Eggs"
     },
     new Product
     {
@@ -597,7 +597,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Fish%20Steak/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Fish%20Steak/thumbnail.png"
+        Thumbnail= "groceries_Fish_Steak"
     },
     new Product
     {
@@ -620,7 +620,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/thumbnail.png"
+        Thumbnail= "groceries_Green_Bell_Pepper"
     },
     new Product
     {
@@ -643,7 +643,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Green%20Chili%20Pepper/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Green%20Chili%20Pepper/thumbnail.png"
+        Thumbnail= "groceries_Green_Chili_Pepper"
     },
     new Product
     {
@@ -666,7 +666,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Honey%20Jar/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Honey%20Jar/thumbnail.png"
+        Thumbnail= "groceries_Honey_Jar"
     },
     new Product
     {
@@ -692,7 +692,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/3.png",
             "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/thumbnail.png"
+        Thumbnail= "groceries_Ice_Cream"
     },
     new Product
     {
@@ -715,7 +715,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Juice/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Juice/thumbnail.png"
+        Thumbnail= "groceries_Juice"
     },
     new Product
     {
@@ -738,7 +738,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Kiwi/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Kiwi/thumbnail.png"
+        Thumbnail= "groceries_Kiwi"
     },
     new Product
     {
@@ -761,7 +761,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Lemon/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Lemon/thumbnail.png"
+        Thumbnail= "groceries_Lemon"
     },
     new Product
     {
@@ -784,7 +784,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Milk/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Milk/thumbnail.png"
+        Thumbnail= "groceries_Milk"
     },
     new Product
     {
@@ -807,7 +807,7 @@ ReturnPolicy= "60 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Mulberry/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Mulberry/thumbnail.png"
+        Thumbnail= "groceries_Mulberry"
     },
     new Product
     {
@@ -831,7 +831,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Nescafe%20Coffee/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Nescafe%20Coffee/thumbnail.png"
+        Thumbnail= "groceries_Nescafe_Coffee"
     },
     new Product
     {
@@ -854,7 +854,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Potatoes/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Potatoes/thumbnail.png"
+        Thumbnail= "groceries_Potatoes"
     },
     new Product
     {
@@ -877,7 +877,7 @@ ReturnPolicy= "No return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Protein%20Powder/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Protein%20Powder/thumbnail.png"
+        Thumbnail= "groceries_Protein_Powder"
     },
     new Product
     {
@@ -900,7 +900,7 @@ ReturnPolicy= "60 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Red%20Onions/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Red%20Onions/thumbnail.png"
+        Thumbnail= "groceries_Red_Onions"
     },
     new Product
     {
@@ -923,7 +923,7 @@ ReturnPolicy= "60 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Rice/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Rice/thumbnail.png"
+        Thumbnail= "groceries_Rice"
     },
     new Product
     {
@@ -946,7 +946,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Soft%20Drinks/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Soft%20Drinks/thumbnail.png"
+        Thumbnail= "groceries_Soft_Drinks"
     },
     new Product
     {
@@ -969,7 +969,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Strawberry/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Strawberry/thumbnail.png"
+        Thumbnail= "groceries_Strawberry"
     },
     new Product
     {
@@ -993,7 +993,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/groceries/Tissue%20Paper%20Box/1.png",
             "https://cdn.dummyjson.com/products/images/groceries/Tissue%20Paper%20Box/2.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Tissue%20Paper%20Box/thumbnail.png"
+        Thumbnail= "groceries_Tissue_Paper_Box"
     },
     new Product
     {
@@ -1016,7 +1016,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/groceries/Water/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/groceries/Water/thumbnail.png"
+        Thumbnail= "groceries_Water"
     },
     new Product
     {
@@ -1042,7 +1042,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/home-decoration/Decoration%20Swing/2.png",
             "https://cdn.dummyjson.com/products/images/home-decoration/Decoration%20Swing/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/home-decoration/Decoration%20Swing/thumbnail.png"
+        Thumbnail= "home_decoration_Decoration_Swing"
     },
     new Product
     {
@@ -1066,7 +1066,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/home-decoration/Family%20Tree%20Photo%20Frame/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/home-decoration/Family%20Tree%20Photo%20Frame/thumbnail.png"
+        Thumbnail= "home_decoration_Family_Tree_Photo_Frame"
     },
     new Product
     {
@@ -1092,7 +1092,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/home-decoration/House%20Showpiece%20Plant/2.png",
             "https://cdn.dummyjson.com/products/images/home-decoration/House%20Showpiece%20Plant/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/home-decoration/House%20Showpiece%20Plant/thumbnail.png"
+        Thumbnail= "home_decoration_House_Showpiece_Plant"
     },
     new Product
     {
@@ -1119,7 +1119,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/home-decoration/Plant%20Pot/3.png",
             "https://cdn.dummyjson.com/products/images/home-decoration/Plant%20Pot/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/home-decoration/Plant%20Pot/thumbnail.png"
+        Thumbnail= "home_decoration_Plant_Pot"
     },
     new Product
     {
@@ -1143,7 +1143,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/home-decoration/Table%20Lamp/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/home-decoration/Table%20Lamp/thumbnail.png"
+        Thumbnail= "home_decoration_Table_Lamp"
     },
     new Product
     {
@@ -1167,7 +1167,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Bamboo%20Spatula/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Bamboo%20Spatula/thumbnail.png"
+        Thumbnail= "kitchen_accessories_Bamboo_Spatula"
     },
     new Product
     {
@@ -1192,7 +1192,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Black%20Aluminium%20Cup/1.png",
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Black%20Aluminium%20Cup/2.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Black%20Aluminium%20Cup/thumbnail.png"
+        Thumbnail= "kitchen_accessories_Black_Aluminium_Cup"
     },
     new Product
     {
@@ -1216,7 +1216,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Black%20Whisk/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Black%20Whisk/thumbnail.png"
+        Thumbnail= "kitchen_accessories_Black_Whisk"
     },
     new Product
     {
@@ -1243,7 +1243,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Boxed%20Blender/3.png",
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Boxed%20Blender/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Boxed%20Blender/thumbnail.png"
+        Thumbnail= "kitchen_accessories_Boxed_Blender"
     },
     new Product
     {
@@ -1267,7 +1267,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Carbon%20Steel%20Wok/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Carbon%20Steel%20Wok/thumbnail.png"
+        Thumbnail= "kitchen_accessories_Carbon_Steel_Wok"
     },
     new Product
     {
@@ -1291,7 +1291,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Chopping%20Board/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Chopping%20Board/thumbnail.png"
+        Thumbnail= "kitchen_accessories_Chopping_Board"
     },
     new Product
     {
@@ -1315,7 +1315,7 @@ ReturnPolicy= "No return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Citrus%20Squeezer%20Yellow/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Citrus%20Squeezer%20Yellow/thumbnail.png"
+        Thumbnail= "kitchen_accessories_Citrus_Squeezer_Yellow"
     },
     new Product
     {
@@ -1339,7 +1339,7 @@ ReturnPolicy= "60 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Egg%20Slicer/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Egg%20Slicer/thumbnail.png"
+        Thumbnail= "kitchen_accessories_Egg_Slicer"
     },
     new Product
     {
@@ -1366,7 +1366,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Electric%20Stove/3.png",
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Electric%20Stove/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Electric%20Stove/thumbnail.png"
+        Thumbnail= "kitchen_accessories_Electric_Stove"
     },
     new Product
     {
@@ -1390,7 +1390,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Fine%20Mesh%20Strainer/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Fine%20Mesh%20Strainer/thumbnail.png"
+        Thumbnail= "kitchen_accessories_Fine_Mesh_Strainer"
     },
     new Product
     {
@@ -1414,7 +1414,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Fork/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Fork/thumbnail.png"
+        Thumbnail= "kitchen_accessories_Fork"
     },
     new Product
     {
@@ -1438,7 +1438,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Glass/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Glass/thumbnail.png"
+        Thumbnail="kitchen_accessories_Glass"
     },
     new Product
     {
@@ -1462,7 +1462,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Grater%20Black/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Grater%20Black/thumbnail.png"
+        Thumbnail="kitchen_accessories_Grater_Black"
     },
     new Product
     {
@@ -1486,7 +1486,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Hand%20Blender/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Hand%20Blender/thumbnail.png"
+        Thumbnail="kitchen_accessories_Hand_Blender"
     },
     new Product
     {
@@ -1510,7 +1510,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Ice%20Cube%20Tray/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Ice%20Cube%20Tray/thumbnail.png"
+        Thumbnail="kitchen_accessories_Ice_Cube_Tray"
     },
     new Product
     {
@@ -1534,7 +1534,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Kitchen%20Sieve/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Kitchen%20Sieve/thumbnail.png"
+        Thumbnail="kitchen_accessories_Kitchen_Sieve"
     },
     new Product
     {
@@ -1558,7 +1558,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Knife/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Knife/thumbnail.png"
+        Thumbnail="kitchen_accessories_Knife"
     },
     new Product
     {
@@ -1582,7 +1582,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Lunch%20Box/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Lunch%20Box/thumbnail.png"
+        Thumbnail="kitchen_accessories_Lunch_Box"
     },
     new Product
     {
@@ -1609,7 +1609,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Microwave%20Oven/3.png",
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Microwave%20Oven/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Microwave%20Oven/thumbnail.png"
+        Thumbnail="kitchen_accessories_Microwave_Oven"
     },
     new Product
     {
@@ -1634,7 +1634,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Mug%20Tree%20Stand/1.png",
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Mug%20Tree%20Stand/2.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Mug%20Tree%20Stand/thumbnail.png"
+        Thumbnail="kitchen_accessories_Mug_Tree_Stand"
     },
     new Product
     {
@@ -1658,7 +1658,7 @@ ReturnPolicy= "No return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Pan/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Pan/thumbnail.png"
+        Thumbnail="kitchen_accessories_Pan"
     },
     new Product
     {
@@ -1682,7 +1682,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Plate/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Plate/thumbnail.png"
+        Thumbnail="kitchen_accessories_Plate"
     },
     new Product
     {
@@ -1706,7 +1706,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Red%20Tongs/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Red%20Tongs/thumbnail.png"
+        Thumbnail="kitchen_accessories_Red_Tongs"
     },
     new Product
     {
@@ -1730,7 +1730,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Silver%20Pot%20With%20Glass%20Cap/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Silver%20Pot%20With%20Glass%20Cap/thumbnail.png"
+        Thumbnail="kitchen_accessories_Silver_Pot_With_Glass_Cap"
     },
     new Product
     {
@@ -1754,7 +1754,7 @@ ReturnPolicy= "No return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Slotted%20Turner/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Slotted%20Turner/thumbnail.png"
+        Thumbnail="kitchen_accessories_Slotted_Turner"
     },
     new Product
     {
@@ -1778,7 +1778,7 @@ ReturnPolicy= "No return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Spice%20Rack/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Spice%20Rack/thumbnail.png"
+        Thumbnail="kitchen_accessories_Spice_Rack"
     },
     new Product
     {
@@ -1802,7 +1802,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Spoon/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Spoon/thumbnail.png"
+        Thumbnail="kitchen_accessories_Spoon"
     },
     new Product
     {
@@ -1826,7 +1826,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Tray/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Tray/thumbnail.png"
+        Thumbnail="kitchen_accessories_Tray"
     },
     new Product
     {
@@ -1850,7 +1850,7 @@ ReturnPolicy= "60 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Wooden%20Rolling%20Pin/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Wooden%20Rolling%20Pin/thumbnail.png"
+        Thumbnail="kitchen_accessories_Wooden_Rolling_Pin"
     },
     new Product
     {
@@ -1874,7 +1874,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/kitchen-accessories/Yellow%20Peeler/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/kitchen-accessories/Yellow%20Peeler/thumbnail.png"
+        Thumbnail="kitchen_accessories_Yellow_Peeler"
     },
     new Product
     {
@@ -1900,7 +1900,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/2.png",
             "https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/thumbnail.png"
+        Thumbnail="laptops_Apple_MacBook_Pro_14_Inch_Space_Grey"
     },
     new Product
     {
@@ -1925,7 +1925,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/laptops/Asus%20Zenbook%20Pro%20Dual%20Screen%20Laptop/2.png",
             "https://cdn.dummyjson.com/products/images/laptops/Asus%20Zenbook%20Pro%20Dual%20Screen%20Laptop/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/laptops/Asus%20Zenbook%20Pro%20Dual%20Screen%20Laptop/thumbnail.png"
+        Thumbnail="laptops_Asus_Zenbook_Pro_Dual_Screen_Laptop"
     },
     new Product
     {
@@ -1950,7 +1950,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/laptops/Huawei%20Matebook%20X%20Pro/2.png",
             "https://cdn.dummyjson.com/products/images/laptops/Huawei%20Matebook%20X%20Pro/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/laptops/Huawei%20Matebook%20X%20Pro/thumbnail.png"
+        Thumbnail="laptops_Huawei_Matebook_X_Pro"
     },
     new Product
     {
@@ -1975,7 +1975,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/laptops/Lenovo%20Yoga%20920/2.png",
             "https://cdn.dummyjson.com/products/images/laptops/Lenovo%20Yoga%20920/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/laptops/Lenovo%20Yoga%20920/thumbnail.png"
+        Thumbnail="laptops_Lenovo_Yoga_920"
     },
     new Product
     {
@@ -2000,7 +2000,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/laptops/New%20DELL%20XPS%2013%209300%20Laptop/2.png",
             "https://cdn.dummyjson.com/products/images/laptops/New%20DELL%20XPS%2013%209300%20Laptop/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/laptops/New%20DELL%20XPS%2013%209300%20Laptop/thumbnail.png"
+        Thumbnail="laptops_New_DELL_XPS_13_9300_Laptop"
     },
     new Product
     {
@@ -2027,7 +2027,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/mens-shirts/Blue%20&%20Black%20Check%20Shirt/3.png",
             "https://cdn.dummyjson.com/products/images/mens-shirts/Blue%20&%20Black%20Check%20Shirt/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-shirts/Blue%20&%20Black%20Check%20Shirt/thumbnail.png"
+        Thumbnail="mens_shirts_Blue_&_Black_Check_Shirt"
     },
     new Product
     {
@@ -2054,7 +2054,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/mens-shirts/Gigabyte%20Aorus%20Men%20Tshirt/3.png",
             "https://cdn.dummyjson.com/products/images/mens-shirts/Gigabyte%20Aorus%20Men%20Tshirt/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-shirts/Gigabyte%20Aorus%20Men%20Tshirt/thumbnail.png"
+        Thumbnail="mens_shirts_Gigabyte_Aorus_Men_Tshirt"
     },
     new Product
     {
@@ -2081,7 +2081,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Plaid%20Shirt/3.png",
             "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Plaid%20Shirt/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Plaid%20Shirt/thumbnail.png"
+        Thumbnail="mens_shirts_Man_Plaid_Shirt"
     },
     new Product
     {
@@ -2108,7 +2108,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Short%20Sleeve%20Shirt/3.png",
             "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Short%20Sleeve%20Shirt/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Short%20Sleeve%20Shirt/thumbnail.png"
+        Thumbnail="mens_shirts_Man_Short_Sleeve_Shirt"
     },
     new Product
     {
@@ -2135,7 +2135,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/mens-shirts/Men%20Check%20Shirt/3.png",
             "https://cdn.dummyjson.com/products/images/mens-shirts/Men%20Check%20Shirt/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-shirts/Men%20Check%20Shirt/thumbnail.png"
+        Thumbnail="mens_shirts_Men_Check_Shirt"
     },
     new Product
     {
@@ -2162,7 +2162,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Air%20Jordan%201%20Red%20And%20Black/3.png",
             "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Air%20Jordan%201%20Red%20And%20Black/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Air%20Jordan%201%20Red%20And%20Black/thumbnail.png"
+        Thumbnail="mens_shoes_Nike_Air_Jordan_1_Red_And_Black"
     },
     new Product
     {
@@ -2189,7 +2189,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Baseball%20Cleats/3.png",
             "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Baseball%20Cleats/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Baseball%20Cleats/thumbnail.png"
+        Thumbnail="mens_shoes_Nike_Baseball_Cleats"
     },
     new Product
     {
@@ -2216,7 +2216,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/mens-shoes/Puma%20Future%20Rider%20Trainers/3.png",
             "https://cdn.dummyjson.com/products/images/mens-shoes/Puma%20Future%20Rider%20Trainers/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-shoes/Puma%20Future%20Rider%20Trainers/thumbnail.png"
+        Thumbnail="mens_shoes_Puma_Future_Rider_Trainers"
     },
     new Product
     {
@@ -2243,7 +2243,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20&%20Red/3.png",
             "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20&%20Red/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20&%20Red/thumbnail.png"
+        Thumbnail="mens_shoes_Sports_Sneakers_Off_White_&_Red"
     },
     new Product
     {
@@ -2270,7 +2270,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20Red/3.png",
             "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20Red/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20Red/thumbnail.png"
+        Thumbnail="mens_shoes_Sports_Sneakers_Off_White_Red"
     },
     new Product
     {
@@ -2296,7 +2296,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/mens-watches/Brown%20Leather%20Belt%20Watch/2.png",
             "https://cdn.dummyjson.com/products/images/mens-watches/Brown%20Leather%20Belt%20Watch/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-watches/Brown%20Leather%20Belt%20Watch/thumbnail.png"
+        Thumbnail="mens_watches_Brown_Leather_Belt_Watch"
     },
     new Product
     {
@@ -2322,7 +2322,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/mens-watches/Longines%20Master%20Collection/2.png",
             "https://cdn.dummyjson.com/products/images/mens-watches/Longines%20Master%20Collection/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-watches/Longines%20Master%20Collection/thumbnail.png"
+        Thumbnail="mens_watches_Longines_Master_Collection"
     },
     new Product
     {
@@ -2348,7 +2348,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Cellini%20Date%20Black%20Dial/2.png",
             "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Cellini%20Date%20Black%20Dial/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Cellini%20Date%20Black%20Dial/thumbnail.png"
+        Thumbnail="mens_watches_Rolex_Cellini_Date_Black_Dial"
     },
     new Product
     {
@@ -2374,7 +2374,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Cellini%20Moonphase/2.png",
             "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Cellini%20Moonphase/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Cellini%20Moonphase/thumbnail.png"
+        Thumbnail="mens_watches_Rolex_Cellini_Moonphase"
     },
     new Product
     {
@@ -2400,7 +2400,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Datejust/2.png",
             "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Datejust/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Datejust/thumbnail.png"
+        Thumbnail="mens_watches_Rolex_Datejust"
     },
     new Product
     {
@@ -2426,7 +2426,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Submariner%20Watch/2.png",
             "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Submariner%20Watch/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Submariner%20Watch/thumbnail.png"
+        Thumbnail="mens_watches_Rolex_Submariner_Watch"
     },
     new Product
     {
@@ -2451,7 +2451,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Amazon%20Echo%20Plus/1.png",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Amazon%20Echo%20Plus/2.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/Amazon%20Echo%20Plus/thumbnail.png"
+        Thumbnail="mobile_accessories_Amazon_Echo_Plus"
     },
     new Product
     {
@@ -2477,7 +2477,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpods/2.png",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpods/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpods/thumbnail.png"
+        Thumbnail="mobile_accessories_Apple_AirPods_Max_Silver"
     },
     new Product
     {
@@ -2501,7 +2501,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20AirPods%20Max%20Silver/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20AirPods%20Max%20Silver/thumbnail.png"
+        Thumbnail="mobile_accessories_Apple_Airpods"
     },
     new Product
     {
@@ -2525,7 +2525,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpower%20Wireless%20Charger/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpower%20Wireless%20Charger/thumbnail.png"
+        Thumbnail="mobile_accessories_Apple_Airpower_Wireless_Charger"
     },
     new Product
     {
@@ -2549,7 +2549,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20HomePod%20Mini%20Cosmic%20Grey/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20HomePod%20Mini%20Cosmic%20Grey/thumbnail.png"
+        Thumbnail="mobile_accessories_Apple_HomePod_Mini_Cosmic_Grey"
     },
     new Product
     {
@@ -2574,7 +2574,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20iPhone%20Charger/1.png",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20iPhone%20Charger/2.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20iPhone%20Charger/thumbnail.png"
+        Thumbnail="mobile_accessories_Apple_iPhone_Charger"
     },
     new Product
     {
@@ -2599,7 +2599,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20MagSafe%20Battery%20Pack/1.png",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20MagSafe%20Battery%20Pack/2.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20MagSafe%20Battery%20Pack/thumbnail.png"
+        Thumbnail="mobile_accessories_Apple_MagSafe_Battery_Pack"
     },
     new Product
     {
@@ -2625,7 +2625,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Watch%20Series%204%20Gold/2.png",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Watch%20Series%204%20Gold/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Watch%20Series%204%20Gold/thumbnail.png"
+        Thumbnail="mobile_accessories_Apple_Watch_Series_4_Gold"
     },
     new Product
     {
@@ -2649,7 +2649,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Beats%20Flex%20Wireless%20Earphones/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/Beats%20Flex%20Wireless%20Earphones/thumbnail.png"
+        Thumbnail="mobile_accessories_Beats_Flex_Wireless_Earphones"
     },
     new Product
     {
@@ -2676,7 +2676,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/iPhone%2012%20Silicone%20Case%20with%20MagSafe%20Plum/3.png",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/iPhone%2012%20Silicone%20Case%20with%20MagSafe%20Plum/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/iPhone%2012%20Silicone%20Case%20with%20MagSafe%20Plum/thumbnail.png"
+        Thumbnail="mobile_accessories_iPhone_12_Silicone_Case_with_MagSafe_Plum"
     },
     new Product
     {
@@ -2701,7 +2701,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Monopod/1.png",
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Monopod/2.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/Monopod/thumbnail.png"
+        Thumbnail="mobile_accessories_Monopod"
     },
     new Product
     {
@@ -2725,7 +2725,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Selfie%20Lamp%20with%20iPhone/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/Selfie%20Lamp%20with%20iPhone/thumbnail.png"
+        Thumbnail="mobile_accessories_Selfie_Lamp_with_iPhone"
     },
     new Product
     {
@@ -2749,7 +2749,7 @@ ReturnPolicy= "60 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/mobile-accessories/Selfie%20Stick%20Monopod/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/Selfie%20Stick%20Monopod/thumbnail.png"
+        Thumbnail="mobile_accessories_Selfie_Stick_Monopod"
     },
     new Product
     {
@@ -2773,7 +2773,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/mobile-accessories/TV%20Studio%20Camera%20Pedestal/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/mobile-accessories/TV%20Studio%20Camera%20Pedestal/thumbnail.png"
+        Thumbnail="mobile_accessories_TV_Studio_Camera_Pedestal"
     },
     new Product
     {
@@ -2799,7 +2799,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/motorcycle/Generic%20Motorcycle/3.png",
             "https://cdn.dummyjson.com/products/images/motorcycle/Generic%20Motorcycle/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/motorcycle/Generic%20Motorcycle/thumbnail.png"
+        Thumbnail="motorcycle_Generic_Motorcycle"
     },
     new Product
     {
@@ -2826,7 +2826,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/motorcycle/Kawasaki%20Z800/3.png",
             "https://cdn.dummyjson.com/products/images/motorcycle/Kawasaki%20Z800/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/motorcycle/Kawasaki%20Z800/thumbnail.png"
+        Thumbnail="motorcycle_Kawasaki_Z800"
     },
     new Product
     {
@@ -2853,7 +2853,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/motorcycle/MotoGP%20CI.H1/3.png",
             "https://cdn.dummyjson.com/products/images/motorcycle/MotoGP%20CI.H1/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/motorcycle/MotoGP%20CI.H1/thumbnail.png"
+        Thumbnail="motorcycle_MotoGP_CI.H1"
     },
     new Product
     {
@@ -2880,7 +2880,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/motorcycle/Scooter%20Motorcycle/3.png",
             "https://cdn.dummyjson.com/products/images/motorcycle/Scooter%20Motorcycle/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/motorcycle/Scooter%20Motorcycle/thumbnail.png"
+        Thumbnail="motorcycle_Scooter_Motorcycle"
     },
     new Product
     {
@@ -2907,7 +2907,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/motorcycle/Sportbike%20Motorcycle/3.png",
             "https://cdn.dummyjson.com/products/images/motorcycle/Sportbike%20Motorcycle/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/motorcycle/Sportbike%20Motorcycle/thumbnail.png"
+        Thumbnail="motorcycle_Sportbike_Motorcycle"
     },
     new Product
     {
@@ -2933,7 +2933,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/skin-care/Attitude%20Super%20Leaves%20Hand%20Soap/2.png",
             "https://cdn.dummyjson.com/products/images/skin-care/Attitude%20Super%20Leaves%20Hand%20Soap/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/skin-care/Attitude%20Super%20Leaves%20Hand%20Soap/thumbnail.png"
+        Thumbnail="skin_care_Attitude_Super_Leaves_Hand_Soap"
     },
     new Product
     {
@@ -2959,7 +2959,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/skin-care/Olay%20Ultra%20Moisture%20Shea%20Butter%20Body%20Wash/2.png",
             "https://cdn.dummyjson.com/products/images/skin-care/Olay%20Ultra%20Moisture%20Shea%20Butter%20Body%20Wash/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/skin-care/Olay%20Ultra%20Moisture%20Shea%20Butter%20Body%20Wash/thumbnail.png"
+        Thumbnail="skin_care_Olay_Ultra_Moisture_Shea_Butter_Body_Wash"
     },
     new Product
     {
@@ -2985,7 +2985,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/skin-care/Vaseline%20Men%20Body%20and%20Face%20Lotion/2.png",
             "https://cdn.dummyjson.com/products/images/skin-care/Vaseline%20Men%20Body%20and%20Face%20Lotion/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/skin-care/Vaseline%20Men%20Body%20and%20Face%20Lotion/thumbnail.png"
+        Thumbnail="skin_care_Vaseline_Men_Body_and_Face_Lotion"
     },
     new Product
     {
@@ -3011,7 +3011,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/iPhone%205s/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/iPhone%205s/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/iPhone%205s/thumbnail.png"
+        Thumbnail="smartphones_iPhone_13_Pro"
     },
     new Product
     {
@@ -3037,7 +3037,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/iPhone%206/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/iPhone%206/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/iPhone%206/thumbnail.png"
+        Thumbnail="smartphones_iPhone_5s"
     },
     new Product
     {
@@ -3063,7 +3063,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/iPhone%2013%20Pro/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/iPhone%2013%20Pro/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/iPhone%2013%20Pro/thumbnail.png"
+        Thumbnail="smartphones_iPhone_6"
     },
     new Product
     {
@@ -3089,7 +3089,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/iPhone%20X/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/iPhone%20X/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/iPhone%20X/thumbnail.png"
+        Thumbnail="smartphones_iPhone_X"
     },
     new Product
     {
@@ -3115,7 +3115,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20A57/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20A57/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20A57/thumbnail.png"
+        Thumbnail="smartphones_Oppo_A57"
     },
     new Product
     {
@@ -3141,7 +3141,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20F19%20Pro%20Plus/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20F19%20Pro%20Plus/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20F19%20Pro%20Plus/thumbnail.png"
+        Thumbnail="smartphones_Oppo_F19_Pro_Plus"
     },
     new Product
     {
@@ -3168,7 +3168,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20K1/3.png",
             "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20K1/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20K1/thumbnail.png"
+        Thumbnail="smartphones_Oppo_K1"
     },
     new Product
     {
@@ -3194,7 +3194,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/Realme%20C35/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/Realme%20C35/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/Realme%20C35/thumbnail.png"
+        Thumbnail="smartphones_Realme_C35"
     },
     new Product
     {
@@ -3220,7 +3220,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/Realme%20X/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/Realme%20X/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/Realme%20X/thumbnail.png"
+        Thumbnail="smartphones_Realme_XT"
     },
     new Product
     {
@@ -3246,7 +3246,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/Realme%20XT/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/Realme%20XT/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/Realme%20XT/thumbnail.png"
+        Thumbnail="smartphones_Realme_X"
     },
     new Product
     {
@@ -3272,7 +3272,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/Samsung%20Galaxy%20S7/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/Samsung%20Galaxy%20S7/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/Samsung%20Galaxy%20S7/thumbnail.png"
+        Thumbnail="smartphones_Samsung_Galaxy_S10"
     },
     new Product
     {
@@ -3298,7 +3298,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/Samsung%20Galaxy%20S8/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/Samsung%20Galaxy%20S8/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/Samsung%20Galaxy%20S8/thumbnail.png"
+        Thumbnail="smartphones_Samsung_Galaxy_S7"
     },
     new Product
     {
@@ -3324,7 +3324,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/Samsung%20Galaxy%20S10/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/Samsung%20Galaxy%20S10/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/Samsung%20Galaxy%20S10/thumbnail.png"
+        Thumbnail="smartphones_Samsung_Galaxy_S8"
     },
     new Product
     {
@@ -3350,7 +3350,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20S1/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20S1/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20S1/thumbnail.png"
+        Thumbnail="smartphones_Vivo_S1"
     },
     new Product
     {
@@ -3376,7 +3376,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20V9/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20V9/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20V9/thumbnail.png"
+        Thumbnail="smartphones_Vivo_V9"
     },
     new Product
     {
@@ -3402,7 +3402,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20X21/2.png",
             "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20X21/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20X21/thumbnail.png"
+        Thumbnail="smartphones_Vivo_X21"
     },
     new Product
     {
@@ -3417,7 +3417,7 @@ ReturnPolicy= "30 days return policy",
             "sports equipment",
             "american football"
         ],
-        Brand="Decor",
+        Brand="MIKASA",
         WarrantyInformation= "1 month warranty",
         ShippingInformation= "Ships in 2 weeks",
         AvailabilityStatus= "In Stock",
@@ -3426,7 +3426,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/American%20Football/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/American%20Football/thumbnail.png"
+        Thumbnail="sports_accessories_American_Football"
     },
     new Product
     {
@@ -3441,7 +3441,7 @@ ReturnPolicy= "30 days return policy",
             "sports equipment",
             "baseball"
         ],
-        Brand="Decor",
+        Brand="MIKASA",
         WarrantyInformation= "3 year warranty",
         ShippingInformation= "Ships overnight",
         AvailabilityStatus= "In Stock",
@@ -3450,7 +3450,7 @@ ReturnPolicy= "No return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Baseball%20Ball/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Baseball%20Ball/thumbnail.png"
+        Thumbnail="sports_accessories_Baseball_Ball"
     },
     new Product
     {
@@ -3465,7 +3465,7 @@ ReturnPolicy= "No return policy",
             "sports equipment",
             "baseball"
         ],
-        Brand="Decor",
+        Brand="MIKASA",
         WarrantyInformation= "3 year warranty",
         ShippingInformation= "Ships in 3-5 business days",
         AvailabilityStatus= "In Stock",
@@ -3476,7 +3476,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/sports-accessories/Baseball%20Glove/2.png",
             "https://cdn.dummyjson.com/products/images/sports-accessories/Baseball%20Glove/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Baseball%20Glove/thumbnail.png"
+        Thumbnail="sports_accessories_Baseball_Glove"
     },
     new Product
     {
@@ -3491,7 +3491,7 @@ ReturnPolicy= "90 days return policy",
             "sports equipment",
             "basketball"
         ],
-        Brand="Decor",
+        Brand="MIKASA",
         WarrantyInformation= "3 months warranty",
         ShippingInformation= "Ships in 1 month",
         AvailabilityStatus= "In Stock",
@@ -3500,7 +3500,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Basketball/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Basketball/thumbnail.png"
+        Thumbnail="sports_accessories_Basketball"
     },
     new Product
     {
@@ -3515,7 +3515,7 @@ ReturnPolicy= "30 days return policy",
             "sports equipment",
             "basketball"
         ],
-        Brand="Decor",
+        Brand="MIKASA",
         WarrantyInformation= "Lifetime warranty",
         ShippingInformation= "Ships in 2 weeks",
         AvailabilityStatus= "In Stock",
@@ -3524,7 +3524,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Basketball%20Rim/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Basketball%20Rim/thumbnail.png"
+        Thumbnail="sports_accessories_Basketball_Rim"
     },
     new Product
     {
@@ -3539,7 +3539,7 @@ ReturnPolicy= "7 days return policy",
             "sports equipment",
             "cricket"
         ],
-        Brand="Decor",
+        Brand="MRF",
         WarrantyInformation= "No warranty",
         ShippingInformation= "Ships overnight",
         AvailabilityStatus= "In Stock",
@@ -3548,7 +3548,7 @@ ReturnPolicy= "60 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Ball/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Ball/thumbnail.png"
+        Thumbnail="sports_accessories_Cricket_Ball"
     },
     new Product
     {
@@ -3563,7 +3563,7 @@ ReturnPolicy= "60 days return policy",
             "sports equipment",
             "cricket"
         ],
-        Brand="Decor",
+        Brand="MRF",
         WarrantyInformation= "Lifetime warranty",
         ShippingInformation= "Ships overnight",
         AvailabilityStatus= "Low Stock",
@@ -3572,7 +3572,7 @@ ReturnPolicy= "90 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Bat/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Bat/thumbnail.png"
+        Thumbnail="sports_accessories_Cricket_Bat"
     },
     new Product
     {
@@ -3587,7 +3587,7 @@ ReturnPolicy= "90 days return policy",
             "sports equipment",
             "cricket"
         ],
-        Brand="Decor",
+        Brand="MRF",
         WarrantyInformation= "3 year warranty",
         ShippingInformation= "Ships in 2 weeks",
         AvailabilityStatus= "In Stock",
@@ -3599,7 +3599,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Helmet/3.png",
             "https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Helmet/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Helmet/thumbnail.png"
+        Thumbnail="sports_accessories_Cricket_Helmet"
     },
     new Product
     {
@@ -3614,7 +3614,7 @@ ReturnPolicy= "No return policy",
             "sports equipment",
             "cricket"
         ],
-        Brand="Decor",
+        Brand="MRF",
         WarrantyInformation= "No warranty",
         ShippingInformation= "Ships in 1 week",
         AvailabilityStatus= "In Stock",
@@ -3623,7 +3623,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Wicket/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Wicket/thumbnail.png"
+        Thumbnail="sports_accessories_Cricket_Wicket"
     },
     new Product
     {
@@ -3638,7 +3638,7 @@ ReturnPolicy= "7 days return policy",
             "sports equipment",
             "badminton"
         ],
-        Brand="Decor",
+        Brand="MRF",
         WarrantyInformation= "3 months warranty",
         ShippingInformation= "Ships in 3-5 business days",
         AvailabilityStatus= "In Stock",
@@ -3647,7 +3647,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Feather%20Shuttlecock/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Feather%20Shuttlecock/thumbnail.png"
+        Thumbnail="sports_accessories_Feather_Shuttlecock"
     },
     new Product
     {
@@ -3662,7 +3662,7 @@ ReturnPolicy= "7 days return policy",
             "sports equipment",
             "football"
         ],
-        Brand="Decor",
+        Brand="MRF",
         WarrantyInformation= "2 year warranty",
         ShippingInformation= "Ships in 2 weeks",
         AvailabilityStatus= "In Stock",
@@ -3671,7 +3671,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Football/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Football/thumbnail.png"
+        Thumbnail="sports_accessories_Football"
     },
     new Product
     {
@@ -3686,7 +3686,7 @@ ReturnPolicy= "7 days return policy",
             "sports equipment",
             "golf"
         ],
-        Brand="Decor",
+        Brand="MRF",
         WarrantyInformation= "1 month warranty",
         ShippingInformation= "Ships in 1 week",
         AvailabilityStatus= "In Stock",
@@ -3695,7 +3695,7 @@ ReturnPolicy= "60 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Golf%20Ball/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Golf%20Ball/thumbnail.png"
+        Thumbnail="sports_accessories_Golf_Ball"
     },
     new Product
     {
@@ -3710,7 +3710,7 @@ ReturnPolicy= "60 days return policy",
             "sports equipment",
             "golf"
         ],
-        Brand="Decor",
+        Brand="MRF",
         WarrantyInformation= "3 months warranty",
         ShippingInformation= "Ships in 1 month",
         AvailabilityStatus= "Low Stock",
@@ -3719,7 +3719,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Iron%20Golf/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Iron%20Golf/thumbnail.png"
+        Thumbnail="sports_accessories_Iron_Golf"
     },
     new Product
     {
@@ -3734,7 +3734,7 @@ ReturnPolicy= "30 days return policy",
             "sports equipment",
             "baseball"
         ],
-        Brand="Decor",
+        Brand="MIKASA",
         WarrantyInformation= "1 month warranty",
         ShippingInformation= "Ships in 3-5 business days",
         AvailabilityStatus= "In Stock",
@@ -3743,7 +3743,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Metal%20Baseball%20Bat/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Metal%20Baseball%20Bat/thumbnail.png"
+        Thumbnail="sports_accessories_Metal_Baseball_Bat"
     },
     new Product
     {
@@ -3758,7 +3758,7 @@ ReturnPolicy= "7 days return policy",
             "sports equipment",
             "tennis"
         ],
-        Brand="Decor",
+        Brand="MIKASA",
         WarrantyInformation= "5 year warranty",
         ShippingInformation= "Ships in 1 week",
         AvailabilityStatus= "In Stock",
@@ -3767,7 +3767,7 @@ ReturnPolicy= "No return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Tennis%20Ball/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Tennis%20Ball/thumbnail.png"
+        Thumbnail="sports_accessories_Tennis_Ball"
     },
     new Product
     {
@@ -3782,7 +3782,7 @@ ReturnPolicy= "No return policy",
             "sports equipment",
             "tennis"
         ],
-        Brand="Decor",
+        Brand="MIKASA",
         WarrantyInformation= "6 months warranty",
         ShippingInformation= "Ships in 2 weeks",
         AvailabilityStatus= "In Stock",
@@ -3791,7 +3791,7 @@ ReturnPolicy= "30 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Tennis%20Racket/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Tennis%20Racket/thumbnail.png"
+        Thumbnail="sports_accessories_Tennis_Racket"
     },
     new Product
     {
@@ -3806,7 +3806,7 @@ ReturnPolicy= "30 days return policy",
             "sports equipment",
             "volleyball"
         ],
-        Brand="Decor",
+        Brand="MIKASA",
         WarrantyInformation= "1 year warranty",
         ShippingInformation= "Ships in 1 month",
         AvailabilityStatus= "Out of Stock",
@@ -3815,7 +3815,7 @@ ReturnPolicy= "7 days return policy",
         Images= [
             "https://cdn.dummyjson.com/products/images/sports-accessories/Volleyball/1.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sports-accessories/Volleyball/thumbnail.png"
+        Thumbnail="sports_accessories_Volleyball"
     },
     new Product
     {
@@ -3841,7 +3841,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/sunglasses/Black%20Sun%20Glasses/2.png",
             "https://cdn.dummyjson.com/products/images/sunglasses/Black%20Sun%20Glasses/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sunglasses/Black%20Sun%20Glasses/thumbnail.png"
+        Thumbnail="sunglasses_Black_Sun_Glasses"
     },
     new Product
     {
@@ -3867,7 +3867,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/sunglasses/Classic%20Sun%20Glasses/2.png",
             "https://cdn.dummyjson.com/products/images/sunglasses/Classic%20Sun%20Glasses/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sunglasses/Classic%20Sun%20Glasses/thumbnail.png"
+        Thumbnail="sunglasses_Classic_Sun_Glasses"
     },
     new Product
     {
@@ -3893,7 +3893,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/sunglasses/Green%20and%20Black%20Glasses/2.png",
             "https://cdn.dummyjson.com/products/images/sunglasses/Green%20and%20Black%20Glasses/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sunglasses/Green%20and%20Black%20Glasses/thumbnail.png"
+        Thumbnail="sunglasses_Green_and_Black_Glasses"
     },
     new Product
     {
@@ -3919,7 +3919,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/sunglasses/Party%20Glasses/2.png",
             "https://cdn.dummyjson.com/products/images/sunglasses/Party%20Glasses/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sunglasses/Party%20Glasses/thumbnail.png"
+        Thumbnail="sunglasses_Party_Glasses"
     },
     new Product
     {
@@ -3945,7 +3945,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/sunglasses/Sunglasses/2.png",
             "https://cdn.dummyjson.com/products/images/sunglasses/Sunglasses/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/sunglasses/Sunglasses/thumbnail.png"
+        Thumbnail="sunglasses_Sunglasses"
     },
     new Product
     {
@@ -3972,7 +3972,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/tablets/iPad%20Mini%202021%20Starlight/3.png",
             "https://cdn.dummyjson.com/products/images/tablets/iPad%20Mini%202021%20Starlight/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/tablets/iPad%20Mini%202021%20Starlight/thumbnail.png"
+        Thumbnail="tablets_iPad_Mini_2021_Starlight"
     },
     new Product
     {
@@ -3999,7 +3999,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/tablets/Samsung%20Galaxy%20Tab%20S8%20Plus%20Grey/3.png",
             "https://cdn.dummyjson.com/products/images/tablets/Samsung%20Galaxy%20Tab%20S8%20Plus%20Grey/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/tablets/Samsung%20Galaxy%20Tab%20S8%20Plus%20Grey/thumbnail.png"
+        Thumbnail="tablets_Samsung_Galaxy_Tab_S8_Plus_Grey"
     },
     new Product
     {
@@ -4026,7 +4026,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/tablets/Samsung%20Galaxy%20Tab%20White/3.png",
             "https://cdn.dummyjson.com/products/images/tablets/Samsung%20Galaxy%20Tab%20White/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/tablets/Samsung%20Galaxy%20Tab%20White/thumbnail.png"
+        Thumbnail="tablets_Samsung_Galaxy_Tab_White"
     },
     new Product
     {
@@ -4053,7 +4053,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/tops/Blue%20Frock/3.png",
             "https://cdn.dummyjson.com/products/images/tops/Blue%20Frock/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/tops/Blue%20Frock/thumbnail.png"
+        Thumbnail="tops_Blue_Frock"
     },
     new Product
     {
@@ -4080,7 +4080,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/tops/Girl%20Summer%20Dress/3.png",
             "https://cdn.dummyjson.com/products/images/tops/Girl%20Summer%20Dress/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/tops/Girl%20Summer%20Dress/thumbnail.png"
+        Thumbnail="tops_Girl_Summer_Dress"
     },
     new Product
     {
@@ -4107,7 +4107,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/tops/Gray%20Dress/3.png",
             "https://cdn.dummyjson.com/products/images/tops/Gray%20Dress/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/tops/Gray%20Dress/thumbnail.png"
+        Thumbnail="tops_Gray_Dress"
     },
     new Product
     {
@@ -4134,7 +4134,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/tops/Short%20Frock/3.png",
             "https://cdn.dummyjson.com/products/images/tops/Short%20Frock/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/tops/Short%20Frock/thumbnail.png"
+        Thumbnail="tops_Short_Frock"
     },
     new Product
     {
@@ -4161,7 +4161,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/tops/Tartan%20Dress/3.png",
             "https://cdn.dummyjson.com/products/images/tops/Tartan%20Dress/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/tops/Tartan%20Dress/thumbnail.png"
+        Thumbnail="tops_Tartan_Dress"
     },
     new Product
     {
@@ -4190,7 +4190,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/vehicle/300%20Touring/5.png",
             "https://cdn.dummyjson.com/products/images/vehicle/300%20Touring/6.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/vehicle/300%20Touring/thumbnail.png"
+        Thumbnail="vehicle_300_Touring"
     },
     new Product
     {
@@ -4220,7 +4220,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/5.png",
             "https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/6.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"
+        Thumbnail="vehicle_Charger_SXT_RWD"
     },
     new Product
     {
@@ -4250,7 +4250,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/vehicle/Dodge%20Hornet%20GT%20Plus/5.png",
             "https://cdn.dummyjson.com/products/images/vehicle/Dodge%20Hornet%20GT%20Plus/6.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/vehicle/Dodge%20Hornet%20GT%20Plus/thumbnail.png"
+        Thumbnail="vehicle_Dodge_Hornet_GT_Plus"
     },
     new Product
     {
@@ -4279,7 +4279,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/vehicle/Durango%20SXT%20RWD/5.png",
             "https://cdn.dummyjson.com/products/images/vehicle/Durango%20SXT%20RWD/6.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/vehicle/Durango%20SXT%20RWD/thumbnail.png"
+        Thumbnail="vehicle_Durango_SXT_RWD"
     },
     new Product
     {
@@ -4308,7 +4308,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/vehicle/Pacifica%20Touring/5.png",
             "https://cdn.dummyjson.com/products/images/vehicle/Pacifica%20Touring/6.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/vehicle/Pacifica%20Touring/thumbnail.png"
+        Thumbnail="vehicle_Pacifica_Touring"
     },
     new Product
     {
@@ -4334,7 +4334,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-bags/Blue%20Women's%20Handbag/2.png",
             "https://cdn.dummyjson.com/products/images/womens-bags/Blue%20Women's%20Handbag/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-bags/Blue%20Women's%20Handbag/thumbnail.png"
+        Thumbnail="womens_bags_Blue_Womens_Handbag"
     },
     new Product
     {
@@ -4360,7 +4360,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-bags/Heshe%20Women's%20Leather%20Bag/2.png",
             "https://cdn.dummyjson.com/products/images/womens-bags/Heshe%20Women's%20Leather%20Bag/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-bags/Heshe%20Women's%20Leather%20Bag/thumbnail.png"
+        Thumbnail="womens_bags_Heshe_Womens_Leather_Bag"
     },
     new Product
     {
@@ -4386,7 +4386,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-bags/Prada%20Women%20Bag/2.png",
             "https://cdn.dummyjson.com/products/images/womens-bags/Prada%20Women%20Bag/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-bags/Prada%20Women%20Bag/thumbnail.png"
+        Thumbnail="womens_bags_Prada_Women_Bag"
     },
     new Product
     {
@@ -4412,7 +4412,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-bags/White%20Faux%20Leather%20Backpack/2.png",
             "https://cdn.dummyjson.com/products/images/womens-bags/White%20Faux%20Leather%20Backpack/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-bags/White%20Faux%20Leather%20Backpack/thumbnail.png"
+        Thumbnail="womens_bags_White_Faux_Leather_Backpack"
     },
     new Product
     {
@@ -4438,7 +4438,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/womens-bags/Women%20Handbag%20Black/2.png",
             "https://cdn.dummyjson.com/products/images/womens-bags/Women%20Handbag%20Black/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-bags/Women%20Handbag%20Black/thumbnail.png"
+        Thumbnail="womens_bags_Women_Handbag_Black"
     },
     new Product
     {
@@ -4465,7 +4465,7 @@ ReturnPolicy= "7 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-dresses/Black%20Women's%20Gown/3.png",
             "https://cdn.dummyjson.com/products/images/womens-dresses/Black%20Women's%20Gown/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-dresses/Black%20Women's%20Gown/thumbnail.png"
+        Thumbnail="womens_dresses_Black_Womens_Gown"
     },
     new Product
     {
@@ -4493,7 +4493,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20Leather%20With%20Skirt/3.png",
             "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20Leather%20With%20Skirt/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20Leather%20With%20Skirt/thumbnail.png"
+        Thumbnail="womens_dresses_Corset_Leather_With_Skirt"
     },
     new Product
     {
@@ -4521,7 +4521,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20With%20Black%20Skirt/3.png",
             "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20With%20Black%20Skirt/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20With%20Black%20Skirt/thumbnail.png"
+        Thumbnail="womens_dresses_Corset_With_Black_Skirt"
     },
     new Product
     {
@@ -4548,7 +4548,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-dresses/Dress%20Pea/3.png",
             "https://cdn.dummyjson.com/products/images/womens-dresses/Dress%20Pea/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-dresses/Dress%20Pea/thumbnail.png"
+        Thumbnail="womens_dresses_Dress_Pea"
     },
     new Product
     {
@@ -4575,7 +4575,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-dresses/Marni%20Red%20&%20Black%20Suit/3.png",
             "https://cdn.dummyjson.com/products/images/womens-dresses/Marni%20Red%20&%20Black%20Suit/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-dresses/Marni%20Red%20&%20Black%20Suit/thumbnail.png"
+        Thumbnail="womens_dresses_Marni_Red_&_Black_Suit"
     },
     new Product
     {
@@ -4601,7 +4601,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-jewellery/Green%20Crystal%20Earring/2.png",
             "https://cdn.dummyjson.com/products/images/womens-jewellery/Green%20Crystal%20Earring/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-jewellery/Green%20Crystal%20Earring/thumbnail.png"
+        Thumbnail="womens_jewellery_Green_Crystal_Earring"
     },
     new Product
     {
@@ -4627,7 +4627,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/womens-jewellery/Green%20Oval%20Earring/2.png",
             "https://cdn.dummyjson.com/products/images/womens-jewellery/Green%20Oval%20Earring/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-jewellery/Green%20Oval%20Earring/thumbnail.png"
+        Thumbnail="womens_jewellery_Green_Oval_Earring"
     },
     new Product
     {
@@ -4653,7 +4653,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-jewellery/Tropical%20Earring/2.png",
             "https://cdn.dummyjson.com/products/images/womens-jewellery/Tropical%20Earring/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-jewellery/Tropical%20Earring/thumbnail.png"
+        Thumbnail="womens_jewellery_Tropical_Earring"
     },
     new Product
     {
@@ -4680,7 +4680,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-shoes/Black%20&%20Brown%20Slipper/3.png",
             "https://cdn.dummyjson.com/products/images/womens-shoes/Black%20&%20Brown%20Slipper/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-shoes/Black%20&%20Brown%20Slipper/thumbnail.png"
+        Thumbnail="womens_shoes_Black_&_Brown_Slipper"
     },
     new Product
     {
@@ -4707,7 +4707,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-shoes/Calvin%20Klein%20Heel%20Shoes/3.png",
             "https://cdn.dummyjson.com/products/images/womens-shoes/Calvin%20Klein%20Heel%20Shoes/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-shoes/Calvin%20Klein%20Heel%20Shoes/thumbnail.png"
+        Thumbnail="womens_shoes_Calvin_Klein_Heel_Shoes"
     },
     new Product
     {
@@ -4734,7 +4734,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/womens-shoes/Golden%20Shoes%20Woman/3.png",
             "https://cdn.dummyjson.com/products/images/womens-shoes/Golden%20Shoes%20Woman/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-shoes/Golden%20Shoes%20Woman/thumbnail.png"
+        Thumbnail="womens_shoes_Golden_Shoes_Woman"
     },
     new Product
     {
@@ -4761,7 +4761,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-shoes/Pampi%20Shoes/3.png",
             "https://cdn.dummyjson.com/products/images/womens-shoes/Pampi%20Shoes/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-shoes/Pampi%20Shoes/thumbnail.png"
+        Thumbnail="womens_shoes_Pampi_Shoes"
     },
     new Product
     {
@@ -4788,7 +4788,7 @@ ReturnPolicy= "30 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/3.png",
             "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/4.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/thumbnail.png"
+        Thumbnail="womens_shoes_Red_Shoes"
     },
     new Product
     {
@@ -4814,7 +4814,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/womens-watches/IWC%20Ingenieur%20Automatic%20Steel/2.png",
             "https://cdn.dummyjson.com/products/images/womens-watches/IWC%20Ingenieur%20Automatic%20Steel/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-watches/IWC%20Ingenieur%20Automatic%20Steel/thumbnail.png"
+        Thumbnail="womens_watches_IWC_Ingenieur_Automatic_Steel"
     },
     new Product
     {
@@ -4840,7 +4840,7 @@ ReturnPolicy= "60 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-watches/Rolex%20Cellini%20Moonphase/2.png",
             "https://cdn.dummyjson.com/products/images/womens-watches/Rolex%20Cellini%20Moonphase/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-watches/Rolex%20Cellini%20Moonphase/thumbnail.png"
+        Thumbnail="womens_watches_Rolex_Cellini_Moonphase"
     },
     new Product
     {
@@ -4867,7 +4867,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-watches/Rolex%20Datejust%20Women/2.png",
             "https://cdn.dummyjson.com/products/images/womens-watches/Rolex%20Datejust%20Women/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-watches/Rolex%20Datejust%20Women/thumbnail.png"
+        Thumbnail="womens_watches_Rolex_Datejust_Women"
     },
     new Product
     {
@@ -4893,7 +4893,7 @@ ReturnPolicy= "No return policy",
             "https://cdn.dummyjson.com/products/images/womens-watches/Watch%20Gold%20for%20Women/2.png",
             "https://cdn.dummyjson.com/products/images/womens-watches/Watch%20Gold%20for%20Women/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-watches/Watch%20Gold%20for%20Women/thumbnail.png"
+        Thumbnail="womens_watches_Watch_Gold_for_Women"
     },
     new Product
     {
@@ -4919,7 +4919,7 @@ ReturnPolicy= "90 days return policy",
             "https://cdn.dummyjson.com/products/images/womens-watches/Women's%20Wrist%20Watch/2.png",
             "https://cdn.dummyjson.com/products/images/womens-watches/Women's%20Wrist%20Watch/3.png"
         ],
-        Thumbnail= "https://cdn.dummyjson.com/products/images/womens-watches/Women's%20Wrist%20Watch/thumbnail.png"
+        Thumbnail="womens_watches_Womens_Wrist_Watch"
     }
             };
             foreach (Product p in products)
