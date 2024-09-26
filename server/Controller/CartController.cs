@@ -26,6 +26,18 @@ namespace server.Controller
             if (result) return Ok(cart);
             return BadRequest(result);
         }
+
+        [HttpPost]
+        public async Task<ActionResult<Cart>> RemoveItemsFromCart(int productId, int quantity)
+        {
+            var cart = await RetrieveCart();
+            if (cart == null) return BadRequest();
+            var product = await _context.Products.FindAsync(productId);
+            cart.RemoveItem(product.Id, quantity);
+            var result = await _context.SaveChangesAsync() > 0;
+            if (!result) return BadRequest(result);
+            return Ok(cart);
+        }
         public async Task<Cart> RetrieveCart()
         {
             return await _context.Carts.FirstOrDefaultAsync(b => b.BuyerId == Request.Cookies["buyerId"]) ?? null;

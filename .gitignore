@@ -486,3 +486,4 @@ $RECYCLE.BIN/
 server/appsettings.Development.json
 server/appsettings.json
 server/Data/Migrations
+server/*.db

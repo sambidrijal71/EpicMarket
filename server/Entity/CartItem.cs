@@ -1,5 +1,8 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace server.Entity
 {
+    [Table("CartItems")]
     public class CartItem
     {
         public int Id { get; set; }
