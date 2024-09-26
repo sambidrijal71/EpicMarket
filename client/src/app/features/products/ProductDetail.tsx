@@ -1,8 +1,6 @@
 import Grid from '@mui/material/Grid2';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useParams } from 'react-router';
-import { agent } from '../../api/agent';
-import { Product } from '../../models/Product';
 import {
   ImageList,
   ImageListItem,
@@ -20,26 +18,22 @@ import {
   currencyAfterDiscount,
   currencyConverter,
 } from '../../utils/Utils';
+import { useAppDispatch, useAppSelector } from '../../store/configureStore';
+import { getProductAsync } from './productSlice';
 
 const ProductDetail = () => {
   const { id } = useParams<string>();
-  const [product, setProduct] = useState<Product | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
+  const dispatch = useAppDispatch();
+  const { product, status } = useAppSelector((state) => state.products);
 
-  console.log(id);
   useEffect(() => {
     try {
-      if (id)
-        agent.Product.getProduct(parseInt(id))
-          .then((product) => setProduct(product))
-          .catch((err) => console.log(err))
-          .finally(() => setLoading(false));
+      if (id) dispatch(getProductAsync(parseInt(id)));
     } catch (error) {
-      setLoading(false);
       console.log(error);
     }
-  }, [setProduct, id]);
-  if (loading || !product)
+  }, [dispatch, id]);
+  if (status.includes('pendingFetch') || !product)
     return <LoadingComponent message={`Loading product with id ${id}`} />;
   return (
     <Grid
