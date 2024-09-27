@@ -17,13 +17,15 @@ namespace server.Entity
                     Quantity = quantity
 
                 });
-                var item = Items.Find(x => x.ProductId == product.Id);
-                if (item == null)
-                {
-                    return;
-                }
-                item.Quantity += quantity;
+                return;
             }
+            var item = Items.Find(x => x.ProductId == product.Id);
+            if (item == null)
+            {
+                return;
+            }
+            item.Quantity += quantity;
+
         }
 
         public void RemoveItem(int productId, int quantity)

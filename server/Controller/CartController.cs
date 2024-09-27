@@ -1,34 +1,35 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using server.Data;
+using server.DTOs;
 using server.Entity;
 
 namespace server.Controller
 {
     public class CartController(StoreContext _context) : BaseController
     {
-        [HttpGet]
-        public async Task<ActionResult<Cart>> GetCart()
+        [HttpGet(Name = "getCart")]
+        public async Task<ActionResult<CartDto>> GetCartItems()
         {
             var cart = await RetrieveCart();
             if (cart == null) return BadRequest(new ProblemDetails { Title = "Cart not Found." });
-            return Ok(cart);
+            return CreatedAtRoute("GetCart", MapCartItemsToDto(cart));
         }
 
-        [HttpPost]
-        public async Task<ActionResult<Cart>> AddItemsToCart(int productId, int quantity)
+        [HttpPost("addCartItems")]
+        public async Task<ActionResult<CartDto>> AddItemsToCart(int productId, int quantity)
         {
             var cart = await RetrieveCart() ?? CreateCart();
             var product = await _context.Products.FindAsync(productId);
             if (product == null) return BadRequest();
             cart.AddItem(product, quantity);
             var result = await _context.SaveChangesAsync() > 0;
-            if (result) return Ok(cart);
+            if (result) return CreatedAtRoute("GetCart", MapCartItemsToDto(cart));
             return BadRequest(result);
         }
 
-        [HttpPost]
-        public async Task<ActionResult<Cart>> RemoveItemsFromCart(int productId, int quantity)
+        [HttpPost("removeCartItems")]
+        public async Task<ActionResult<CartDto>> RemoveItemsFromCart(int productId, int quantity)
         {
             var cart = await RetrieveCart();
             if (cart == null) return BadRequest();
@@ -36,11 +37,11 @@ namespace server.Controller
             cart.RemoveItem(product.Id, quantity);
             var result = await _context.SaveChangesAsync() > 0;
             if (!result) return BadRequest(result);
-            return Ok(cart);
+            return CreatedAtRoute("GetCart", MapCartItemsToDto(cart));
         }
-        public async Task<Cart> RetrieveCart()
+        private async Task<Cart> RetrieveCart()
         {
-            return await _context.Carts.FirstOrDefaultAsync(b => b.BuyerId == Request.Cookies["buyerId"]) ?? null;
+            return await _context.Carts.Include(i => i.Items).ThenInclude(p => p.Product).FirstOrDefaultAsync(b => b.BuyerId == Request.Cookies["buyerId"]) ?? null;
         }
 
         private Cart CreateCart()
@@ -55,6 +56,35 @@ namespace server.Controller
             var cart = new Cart { BuyerId = buyerId };
             _context.Carts.Add(cart);
             return cart;
+        }
+
+        private static CartDto MapCartItemsToDto(Cart cart)
+        {
+            return new CartDto
+            {
+                Id = cart.Id,
+                BuyerId = cart.BuyerId,
+                Items = cart.Items.Select(d => new CartItemDto
+                {
+                    Id = d.Product.Id,
+                    Name = d.Product.Name,
+                    Description = d.Product.Description,
+                    Category = d.Product.Description,
+                    Brand = d.Product.Description,
+                    Tags = d.Product.Tags,
+                    Price = d.Product.Price,
+                    QuantityInStock = d.Product.QuantityInStock,
+                    DiscountPercentage = d.Product.DiscountPercentage,
+                    Rating = d.Product.Rating,
+                    WarrantyInformation = d.Product.WarrantyInformation,
+                    ShippingInformation = d.Product.ShippingInformation,
+                    AvailabilityStatus = d.Product.AvailabilityStatus,
+                    ReturnPolicy = d.Product.ReturnPolicy,
+                    Images = d.Product.Images,
+                    Thumbnail = d.Product.Thumbnail,
+                    Quantity = d.Quantity,
+                }).ToList()
+            };
         }
     }
 }

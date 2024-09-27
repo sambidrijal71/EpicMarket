@@ -7,7 +7,7 @@ namespace server.Controller
 {
     public class ProductsController(StoreContext _context) : BaseController
     {
-        [HttpGet(Name = "GetProducts")]
+        [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts()
         {
             var products = await _context.Products.ToListAsync();
