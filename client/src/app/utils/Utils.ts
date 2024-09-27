@@ -14,3 +14,8 @@ export const currencyAfterDiscount = (
 export const capitalizeFirstLetter = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
+
+export const getCookie = (key: string) => {
+  const cookie = document.cookie.match('(^|;)\\s*' + key + '\\s*=\\s*([^;]+)');
+  return cookie ? cookie.pop() : '';
+};

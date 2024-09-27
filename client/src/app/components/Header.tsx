@@ -10,6 +10,7 @@ import {
 } from '@mui/material';
 import { Link, NavLink } from 'react-router-dom';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { useAppSelector } from '../store/configureStore';
 
 interface Props {
   checked: boolean;
@@ -44,6 +45,9 @@ const navStyle = {
 };
 
 const Header = ({ checked, onThemeChange }: Props) => {
+  const { cart } = useAppSelector((state) => state.cart);
+  const totalItem =
+    cart && cart.items.reduce((value, item) => value + item.quantity, 0);
   return (
     <Box sx={{ mb: 4 }}>
       <AppBar position='static'>
@@ -79,7 +83,7 @@ const Header = ({ checked, onThemeChange }: Props) => {
           <Box>
             <List sx={flexProperties}>
               <Badge
-                badgeContent={4}
+                badgeContent={totalItem}
                 color='primary'
                 sx={{ mr: 2, ...navStyle }}
                 component={NavLink}

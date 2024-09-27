@@ -28,7 +28,7 @@ namespace server.Controller
             return BadRequest(result);
         }
 
-        [HttpPost("removeCartItems")]
+        [HttpDelete("removeCartItems")]
         public async Task<ActionResult<CartDto>> RemoveItemsFromCart(int productId, int quantity)
         {
             var cart = await RetrieveCart();

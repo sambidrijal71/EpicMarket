@@ -18,4 +18,17 @@ const Product = {
   getProduct: (id: number) => requests.get(`products/${id}`),
 };
 
-export const agent = { Product };
+const Cart = {
+  getCart: () => requests.get('cart'),
+  addCartItems: (productId: number, quantity: number) =>
+    requests.post(
+      `cart/addCartItems?productId=${productId}&quantity=${quantity}`,
+      {}
+    ),
+  removeCartItems: (productId: number, quantity: number) =>
+    requests.delete(
+      `cart/removeCartItems?productId=${productId}&quantity=${quantity}`
+    ),
+};
+
+export const agent = { Product, Cart };

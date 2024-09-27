@@ -7,10 +7,17 @@ import {
 import Header from './app/components/Header';
 import Footer from './app/components/Footer';
 import { Outlet } from 'react-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useAppDispatch } from './app/store/configureStore';
+import { getCartItemsAsync } from './app/features/cart/cart.Slice';
 
 const App = () => {
   const [darkTheme, setDarkTheme] = useState<boolean>(true);
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(getCartItemsAsync());
+  }, [dispatch]);
 
   const paletteType = darkTheme == true ? 'dark' : 'light';
   const theme = createTheme({
