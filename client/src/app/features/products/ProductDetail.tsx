@@ -24,7 +24,7 @@ import {
   currencyConverter,
 } from '../../utils/Utils';
 import { useAppDispatch, useAppSelector } from '../../store/configureStore';
-import { getProductAsync } from './productSlice';
+import { getProductAsync, productsSelector } from './productSlice';
 import { LoadingButton } from '@mui/lab';
 import { addCartItemsAsync, removeCartItemsAsync } from '../cart/cart.Slice';
 
@@ -44,7 +44,10 @@ const style = {
 const ProductDetail = () => {
   const { id } = useParams<string>();
   const dispatch = useAppDispatch();
-  const { product, status } = useAppSelector((state) => state.products);
+  const { status, productsLoaded } = useAppSelector((state) => state.products);
+  const product = useAppSelector((state) =>
+    productsSelector.selectById(state, parseInt(id!))
+  );
   const { cart } = useAppSelector((state) => state.cart);
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
@@ -95,12 +98,13 @@ const ProductDetail = () => {
   };
 
   useEffect(() => {
-    try {
-      if (id) dispatch(getProductAsync(parseInt(id)));
-      if (cartItem) setQuantity(cartItem.quantity);
-    } catch (error) {
-      console.log(error);
-    }
+    if (!productsLoaded)
+      try {
+        if (id) dispatch(getProductAsync(parseInt(id)));
+        if (cartItem) setQuantity(cartItem.quantity);
+      } catch (error) {
+        console.log(error);
+      }
   }, [dispatch, id, cartItem]);
   if (status.includes('pendingFetch') || !product)
     return <LoadingComponent message={`Loading product with id ${id}`} />;

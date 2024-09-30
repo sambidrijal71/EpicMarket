@@ -1,29 +1,54 @@
-import { createAsyncThunk, createSlice, isAnyOf } from '@reduxjs/toolkit';
+import { ProductParams } from './../../models/Product';
+import {
+  createAsyncThunk,
+  createEntityAdapter,
+  createSlice,
+  isAnyOf,
+} from '@reduxjs/toolkit';
 import { Product } from '../../models/Product';
 import { agent } from '../../api/agent';
-import { ProductParams } from '../../models/Product';
+import { RootState } from '../../store/configureStore';
+import { Metadata } from '../../models/Pagination';
 
-export interface ProductState {
-  products: Product[] | null;
-  product: Product | null;
+interface ProductState {
+  productsLoaded: boolean;
+  filtersLoaded: boolean;
   status: string;
-  brands: string[] | null;
-  categories: string[] | null;
-  productParams: ProductParams | null;
+  brands: string[];
+  categories: string[];
+  productParams: ProductParams;
+  metaData: Metadata | null;
 }
+const urlSearchParams = (productParams: ProductParams) => {
+  let params = new URLSearchParams();
+  params.append('pageNumber', productParams.pageNumber.toString());
+  params.append('pageSize', productParams.pageSize.toString());
+  if (productParams.brands.length > 0)
+    params.append('brands', productParams.brands.toString());
+  if (productParams.categories.length > 0)
+    params.append('categories', productParams.categories.toString());
+  if (productParams.searchTerm)
+    params.append('searchTerm', productParams.searchTerm);
+  if (productParams.orderBy) params.append('orderBy', productParams.orderBy);
+  return params;
+};
+const productsAdapter = createEntityAdapter<Product>();
 
-export const getProductsAsync = createAsyncThunk<Product[]>(
-  'users/getProductsAsync',
-  async (_, thunkAPI) => {
-    try {
-      const products = await agent.Product.getProducts();
-      return products;
-    } catch (error) {
-      console.log(error);
-      return thunkAPI.rejectWithValue(error);
-    }
+export const getProductsAsync = createAsyncThunk<
+  Product[],
+  void,
+  { state: RootState }
+>('users/getProductsAsync', async (_, thunkAPI) => {
+  const params = urlSearchParams(thunkAPI.getState().products.productParams);
+  try {
+    const response = await agent.Product.getProducts(params);
+    thunkAPI.dispatch(setMetaData(response.metaData));
+    return response.items;
+  } catch (error) {
+    console.log(error);
+    return thunkAPI.rejectWithValue(error);
   }
-);
+});
 
 export const getFiltersAsync = createAsyncThunk(
   'users/getFiltersAsync',
@@ -51,39 +76,65 @@ export const getProductAsync = createAsyncThunk<Product, number>(
   }
 );
 
-const initParams = () => {
+const initParams = (): ProductParams => {
   return {
     orderBy: 'name',
     pageNumber: 1,
     pageSize: 24,
+    searchTerm: '',
+    brands: [],
+    categories: [],
   };
-};
-const initialState: ProductState = {
-  products: null,
-  product: null,
-  status: 'idle',
-  brands: null,
-  categories: null,
-  productParams: initParams(),
 };
 
 export const productSlice = createSlice({
-  name: 'counter',
-  initialState,
-  reducers: {},
+  name: 'products',
+  initialState: productsAdapter.getInitialState<ProductState>({
+    status: 'idle',
+    brands: [],
+    categories: [],
+    productParams: initParams(),
+    productsLoaded: false,
+    filtersLoaded: false,
+    metaData: null,
+  }),
+  reducers: {
+    setProductParams: (state, action) => {
+      state.productsLoaded = false;
+      state.productParams = {
+        ...state.productParams,
+        ...action.payload,
+        pageNumber: 1,
+      };
+    },
+    setMetaData: (state, action) => {
+      state.metaData = action.payload;
+    },
+    setPageNumber: (state, action) => {
+      state.productsLoaded = false;
+      state.productParams = { ...state.productParams, ...action.payload };
+    },
+    resetProductParams: (state) => {
+      state.productsLoaded = false;
+      state.productParams = initParams();
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(getProductsAsync.fulfilled, (state, action) => {
-      state.products = action.payload;
+      productsAdapter.setAll(state, action.payload);
       state.status = 'idle';
+      state.productsLoaded = true;
     });
     builder.addCase(getProductAsync.fulfilled, (state, action) => {
-      state.product = action.payload;
+      productsAdapter.upsertOne(state, action.payload);
       state.status = 'idle';
+      state.productsLoaded = true;
     });
     builder.addCase(getFiltersAsync.fulfilled, (state, action) => {
       state.categories = action.payload.categories;
       state.brands = action.payload.brands;
       state.status = 'idle';
+      state.filtersLoaded = true;
     });
     builder.addMatcher(
       isAnyOf(
@@ -110,4 +161,12 @@ export const productSlice = createSlice({
   },
 });
 
-export default productSlice.reducer;
+export const {
+  setProductParams,
+  setMetaData,
+  resetProductParams,
+  setPageNumber,
+} = productSlice.actions;
+export const productsSelector = productsAdapter.getSelectors(
+  (state: RootState) => state.products
+);
