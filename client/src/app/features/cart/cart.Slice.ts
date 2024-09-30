@@ -57,8 +57,7 @@ export const cartSlice = createSlice({
   reducers: {},
 
   extraReducers: (builder) => {
-    builder.addCase(getCartItemsAsync.pending, (state, action) => {
-      console.log(action);
+    builder.addCase(getCartItemsAsync.pending, (state) => {
       state.status = 'pendingFetchItems';
     });
     builder.addCase(addCartItemsAsync.pending, (state, action) => {

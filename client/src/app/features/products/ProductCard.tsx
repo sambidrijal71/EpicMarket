@@ -7,6 +7,7 @@ import {
   CardContent,
   CardHeader,
   CardMedia,
+  Rating,
   Typography,
 } from '@mui/material';
 import { Product } from '../../models/Product';
@@ -35,7 +36,14 @@ const ProductCard = ({ product }: Props) => {
           </Avatar>
         }
         title={product.name}
-        subheader={product.rating}
+        subheader={
+          <Rating
+            name='read-only'
+            value={product.rating}
+            readOnly
+            size='small'
+          />
+        }
       />
       <CardMedia
         sx={{ height: 140, backgroundSize: 'contain' }}

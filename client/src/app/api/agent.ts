@@ -16,6 +16,7 @@ const requests = {
 const Product = {
   getProducts: () => requests.get('products'),
   getProduct: (id: number) => requests.get(`products/${id}`),
+  getProductFilters: () => requests.get('products/filter'),
 };
 
 const Cart = {

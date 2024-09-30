@@ -16,3 +16,12 @@ export interface Product {
   images: string[];
   thumbnail: string;
 }
+
+export interface ProductParams {
+  orderBy: string;
+  searchTerm?: string;
+  brands?: string[];
+  categories?: string[];
+  pageSize: number;
+  pageNumber: number;
+}

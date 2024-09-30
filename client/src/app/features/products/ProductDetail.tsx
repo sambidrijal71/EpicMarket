@@ -8,6 +8,7 @@ import {
   ImageListItem,
   Modal,
   Paper,
+  Rating,
   Table,
   TableCell,
   TableContainer,
@@ -25,6 +26,7 @@ import {
 import { useAppDispatch, useAppSelector } from '../../store/configureStore';
 import { getProductAsync } from './productSlice';
 import { LoadingButton } from '@mui/lab';
+import { addCartItemsAsync, removeCartItemsAsync } from '../cart/cart.Slice';
 
 const style = {
   position: 'absolute',
@@ -43,10 +45,45 @@ const ProductDetail = () => {
   const { id } = useParams<string>();
   const dispatch = useAppDispatch();
   const { product, status } = useAppSelector((state) => state.products);
+  const { cart } = useAppSelector((state) => state.cart);
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  const cartItem = cart?.items.find((a) => a.id === product?.id);
+
+  const [quantity, setQuantity] = useState<number>(0);
+
+  const handleInputChange = (value: number) => {
+    if (value >= 0) setQuantity(value);
+    console.log(quantity);
+  };
+
+  const handleUpdateCart = () => {
+    if (!product) return;
+    if (!cartItem || quantity > cartItem.quantity) {
+      const updatedQuantity = cartItem
+        ? quantity - cartItem.quantity
+        : quantity;
+      if (product)
+        dispatch(
+          addCartItemsAsync({
+            productId: product.id,
+            quantity: updatedQuantity,
+          })
+        );
+    } else {
+      const updatedQuantity = cartItem.quantity - quantity;
+      if (product)
+        dispatch(
+          removeCartItemsAsync({
+            productId: product.id,
+            quantity: updatedQuantity,
+            name: 'rem',
+          })
+        );
+    }
+  };
   const imageDisplay = () => {
     if (product) {
       return product.images.map((image, index) => (
@@ -56,13 +93,15 @@ const ProductDetail = () => {
       ));
     }
   };
+
   useEffect(() => {
     try {
       if (id) dispatch(getProductAsync(parseInt(id)));
+      if (cartItem) setQuantity(cartItem.quantity);
     } catch (error) {
       console.log(error);
     }
-  }, [dispatch, id]);
+  }, [dispatch, id, cartItem]);
   if (status.includes('pendingFetch') || !product)
     return <LoadingComponent message={`Loading product with id ${id}`} />;
   return (
@@ -90,7 +129,6 @@ const ProductDetail = () => {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-between',
-              // alignItems: 'center',
               height: '80vh',
             }}
           >
@@ -110,14 +148,25 @@ const ProductDetail = () => {
               <Grid size={{ xs: 5 }}>
                 <TextField
                   id='outlined-basic'
-                  label='Update Cart'
+                  label={!cartItem?.quantity ? 'Add To Cart' : 'Update Cart'}
                   variant='outlined'
                   type='number'
+                  value={quantity}
+                  onChange={(e) => handleInputChange(parseInt(e.target.value))}
                 />
               </Grid>
               <Grid size={{ xs: 4 }}>
-                <LoadingButton variant='outlined' fullWidth size='large'>
-                  Update Cart
+                <LoadingButton
+                  variant='outlined'
+                  fullWidth
+                  size='large'
+                  disabled={
+                    quantity === cartItem?.quantity ||
+                    (!cartItem && quantity === 0)
+                  }
+                  onClick={handleUpdateCart}
+                >
+                  {!cartItem?.quantity ? 'Add To Cart' : 'Update Cart'}
                 </LoadingButton>
               </Grid>
             </Grid>
@@ -149,7 +198,9 @@ const ProductDetail = () => {
               </TableRow>
               <TableRow>
                 <TableCell>Rating:</TableCell>
-                <TableCell>{product?.rating}</TableCell>
+                <TableCell>
+                  <Rating name='read-only' value={product.rating} readOnly />
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell>Warranty:</TableCell>

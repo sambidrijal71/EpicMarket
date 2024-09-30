@@ -10,6 +10,7 @@ import { Outlet } from 'react-router';
 import { useEffect, useState } from 'react';
 import { useAppDispatch } from './app/store/configureStore';
 import { getCartItemsAsync } from './app/features/cart/cart.Slice';
+import { getFiltersAsync } from './app/features/products/productSlice';
 
 const App = () => {
   const [darkTheme, setDarkTheme] = useState<boolean>(true);
@@ -17,6 +18,7 @@ const App = () => {
 
   useEffect(() => {
     dispatch(getCartItemsAsync());
+    dispatch(getFiltersAsync());
   }, [dispatch]);
 
   const paletteType = darkTheme == true ? 'dark' : 'light';
