@@ -128,7 +128,6 @@ export const productSlice = createSlice({
     builder.addCase(getProductAsync.fulfilled, (state, action) => {
       productsAdapter.upsertOne(state, action.payload);
       state.status = 'idle';
-      state.productsLoaded = true;
     });
     builder.addCase(getFiltersAsync.fulfilled, (state, action) => {
       state.categories = action.payload.categories;

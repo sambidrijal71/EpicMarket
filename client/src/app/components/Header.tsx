@@ -84,12 +84,12 @@ const Header = ({ checked, onThemeChange }: Props) => {
             <List sx={flexProperties}>
               <Badge
                 badgeContent={totalItem}
-                color='primary'
+                color='secondary'
                 sx={{ mr: 2, ...navStyle }}
                 component={NavLink}
                 to='/cart'
               >
-                <ShoppingCartIcon />
+                <ShoppingCartIcon sx={{ color: 'secondary.dark' }} />
               </Badge>
               {rightLinks.map(({ name, path }) => (
                 <ListItem key={name}>

@@ -82,12 +82,13 @@ const ProductCard = ({ product }: Props) => {
           View
         </Button>
         <LoadingButton
+          disabled={product.quantityInStock === 0}
           loading={status === 'pendingAddBasketItems' + product.id}
           size='small'
           variant='outlined'
           onClick={() => handleAddItem(product.id, 1)}
         >
-          Add To Cart
+          {product.quantityInStock === 0 ? 'Out of Stock' : 'Add To Cart'}
         </LoadingButton>
       </CardActions>
     </Card>

@@ -17,8 +17,10 @@ const ProductSearch = () => {
   return (
     <Paper sx={{ marginBottom: 2 }}>
       <TextField
-        inputProps={{
-          autoComplete: 'off',
+        slotProps={{
+          htmlInput: {
+            autoComplete: 'off',
+          },
         }}
         autoFocus
         variant='outlined'

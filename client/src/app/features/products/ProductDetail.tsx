@@ -44,7 +44,7 @@ const style = {
 const ProductDetail = () => {
   const { id } = useParams<string>();
   const dispatch = useAppDispatch();
-  const { status, productsLoaded } = useAppSelector((state) => state.products);
+  const { status } = useAppSelector((state) => state.products);
   const product = useAppSelector((state) =>
     productsSelector.selectById(state, parseInt(id!))
   );
@@ -54,7 +54,6 @@ const ProductDetail = () => {
   const handleClose = () => setOpen(false);
 
   const cartItem = cart?.items.find((a) => a.id === product?.id);
-
   const [quantity, setQuantity] = useState<number>(0);
 
   const handleInputChange = (value: number) => {
@@ -98,7 +97,7 @@ const ProductDetail = () => {
   };
 
   useEffect(() => {
-    if (!productsLoaded)
+    if (!product)
       try {
         if (id) dispatch(getProductAsync(parseInt(id)));
         if (cartItem) setQuantity(cartItem.quantity);
@@ -151,8 +150,15 @@ const ProductDetail = () => {
             >
               <Grid size={{ xs: 5 }}>
                 <TextField
+                  disabled={product.quantityInStock === 0}
                   id='outlined-basic'
-                  label={!cartItem?.quantity ? 'Add To Cart' : 'Update Cart'}
+                  label={
+                    product.quantityInStock === 0
+                      ? 'Out of Stock'
+                      : !cartItem?.quantity
+                      ? 'Add To Cart'
+                      : 'Update Cart'
+                  }
                   variant='outlined'
                   type='number'
                   value={quantity}
@@ -166,11 +172,16 @@ const ProductDetail = () => {
                   size='large'
                   disabled={
                     quantity === cartItem?.quantity ||
-                    (!cartItem && quantity === 0)
+                    (!cartItem && quantity === 0) ||
+                    product.quantityInStock === 0
                   }
                   onClick={handleUpdateCart}
                 >
-                  {!cartItem?.quantity ? 'Add To Cart' : 'Update Cart'}
+                  {product.quantityInStock === 0
+                    ? 'Out of Stock'
+                    : !cartItem?.quantity
+                    ? 'Add To Cart'
+                    : 'Update Cart'}
                 </LoadingButton>
               </Grid>
             </Grid>
