@@ -1,5 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
 import { PaginatedList } from '../models/Pagination';
+import { FieldValues } from 'react-hook-form';
 
 axios.defaults.baseURL = 'http://localhost:5000/api/';
 axios.defaults.withCredentials = true;
@@ -41,4 +42,9 @@ const Cart = {
     ),
 };
 
-export const agent = { Product, Cart };
+const Account = {
+  login: (data: FieldValues) => requests.post('account/loginUser', data),
+  register: (data: FieldValues) => requests.post('account/registerUser', data),
+};
+
+export const agent = { Product, Cart, Account };

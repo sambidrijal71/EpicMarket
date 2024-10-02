@@ -8,16 +8,40 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
+import { SubmitHandler, useForm } from 'react-hook-form';
 import { NavLink } from 'react-router-dom';
+import { useAppDispatch } from '../../store/configureStore';
+import { postUserLoginAsync } from './accountSlice';
+import { toast } from 'react-toastify';
 
+type Input = {
+  userName: string;
+  password: string;
+};
 const Login = () => {
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Input>({
+    defaultValues: {
+      userName: 'member',
+      password: 'Pa$$w0rd',
+    },
+    mode: 'onChange',
+  });
+  const dispatch = useAppDispatch();
+
+  const handleUserSubmit: SubmitHandler<Input> = (data) => {
+    try {
+      dispatch(postUserLoginAsync(data)).catch((err) => {
+        console.log(err);
+        toast.error(err);
+      });
+      // toast.success('Login successful.');
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -41,7 +65,7 @@ const Login = () => {
           </Typography>
           <Box
             component='form'
-            onSubmit={handleSubmit}
+            onSubmit={handleSubmit(handleUserSubmit)}
             noValidate
             sx={{
               display: 'flex',
@@ -51,39 +75,42 @@ const Login = () => {
             }}
           >
             <FormControl>
-              <FormLabel htmlFor='email'>Email</FormLabel>
+              <FormLabel>Email</FormLabel>
               <TextField
+                {...register('userName', {
+                  required: 'Username field cannot be empty.',
+                })}
                 slotProps={{
                   htmlInput: {
                     autoComplete: 'new-email',
                   },
                 }}
-                // error={emailError}
-                // helperText={emailErrorMessage}
-                id='email'
-                type='email'
-                name='email'
-                placeholder='your@email.com'
+                error={!!errors.userName}
+                helperText={errors.userName?.message}
+                id='userName'
+                type='text'
+                placeholder='username71'
                 required
                 fullWidth
                 variant='outlined'
-                // color={emailError ? 'error' : 'primary'}
                 sx={{ ariaLabel: 'email' }}
               />
             </FormControl>
             <FormControl>
               <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                <FormLabel htmlFor='password'>Password</FormLabel>
+                <FormLabel>Password</FormLabel>
               </Box>
               <TextField
+                {...register('password', {
+                  required: 'Password field cannot be empty.',
+                })}
                 slotProps={{
                   htmlInput: {
                     autoComplete: 'new-password',
                   },
                 }}
-                // error={passwordError}
-                // helperText={passwordErrorMessage}
-                name='password'
+                error={!!errors.password}
+                helperText={errors.password?.message}
                 placeholder='••••••'
                 type='password'
                 id='password'

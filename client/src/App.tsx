@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
 import { useAppDispatch } from './app/store/configureStore';
 import { getCartItemsAsync } from './app/features/cart/cart.Slice';
 import { getFiltersAsync } from './app/features/products/productSlice';
+import { ToastContainer } from 'react-toastify';
 
 const App = () => {
   const [darkTheme, setDarkTheme] = useState<boolean>(true);
@@ -40,6 +41,16 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <ToastContainer
+        position='top-right'
+        autoClose={1000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        pauseOnFocusLoss
+        pauseOnHover
+        theme={paletteType === 'dark' ? 'dark' : 'light'}
+      />
       <CssBaseline />
       <Header checked={darkTheme} onThemeChange={handleThemeChange} />
       <Container
@@ -48,6 +59,7 @@ const App = () => {
         <Outlet />
       </Container>
       <Footer />
+      <ToastContainer />
     </ThemeProvider>
   );
 };

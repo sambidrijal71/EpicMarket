@@ -1,12 +1,14 @@
 import { productSlice } from './../features/products/productSlice';
 import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
-import cartSlice from '../features/cart/cart.Slice';
+import { cartSlice } from '../features/cart/cart.Slice';
+import { userSlice } from '../features/account/accountSlice';
 
 export const store = configureStore({
   reducer: {
     products: productSlice.reducer,
-    cart: cartSlice,
+    cart: cartSlice.reducer,
+    user: userSlice.reducer,
   },
 });
 

@@ -1,11 +1,31 @@
+using Microsoft.AspNetCore.Identity;
 using server.Entity;
 
 namespace server.Data
 {
     public static class DbInitializer
     {
-        public static void Initialize(StoreContext context)
+        public async static void Initialize(StoreContext context, UserManager<User> userManager)
         {
+            if (!userManager.Users.Any())
+            {
+                var member = new User
+                {
+                    UserName = "member",
+                    Email = "member@test.com",
+                };
+                await userManager.CreateAsync(member, "Pa$$w0rd");
+                await userManager.AddToRoleAsync(member, "Member");
+
+                var admin = new User
+                {
+                    UserName = "admin",
+                    Email = "admin@test.com",
+                };
+                await userManager.CreateAsync(admin, "Pa$$w0rd");
+                await userManager.AddToRolesAsync(admin, new[] { "Member", "Admin" });
+            }
+
             if (context.Products.Any()) return;
             var products = new List<Product>
             {
@@ -4926,7 +4946,7 @@ ReturnPolicy= "90 days return policy",
             {
                 context.Products.Add(p);
             }
-            context.SaveChanges();
+            await context.SaveChangesAsync();
 
         }
     }
