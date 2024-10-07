@@ -9,7 +9,7 @@ import {
   Typography,
 } from '@mui/material';
 import { SubmitHandler, useForm } from 'react-hook-form';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useAppDispatch } from '../../store/configureStore';
 import { postUserLoginAsync } from './accountSlice';
 import { toast } from 'react-toastify';
@@ -22,6 +22,7 @@ const Login = () => {
   const {
     register,
     handleSubmit,
+    setError,
     formState: { errors },
   } = useForm<Input>({
     defaultValues: {
@@ -31,16 +32,19 @@ const Login = () => {
     mode: 'onChange',
   });
   const dispatch = useAppDispatch();
-
-  const handleUserSubmit: SubmitHandler<Input> = (data) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const handleUserSubmit: SubmitHandler<Input> = async (data) => {
     try {
-      dispatch(postUserLoginAsync(data)).catch((err) => {
-        console.log(err);
-        toast.error(err);
-      });
-      // toast.success('Login successful.');
-    } catch (error) {
-      console.log(error);
+      await dispatch(postUserLoginAsync(data)).then(() =>
+        navigate(location.state?.from || '/products')
+      );
+      toast.success('Login successful.');
+    } catch (error: any) {
+      const { title } = error.data;
+      if (title.includes('email')) setError('userName', { message: '' });
+      setError('password', { message: error.data.title });
+      toast.error(error);
     }
   };
 

@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice, isAnyOf } from '@reduxjs/toolkit';
 import { agent } from '../../api/agent';
 import { Cart } from '../../models/Cart';
+import { getCookie } from '../../utils/Utils';
 
 export interface CartState {
   cart: Cart | null;
@@ -17,6 +18,11 @@ export const getCartItemsAsync = createAsyncThunk<Cart>(
       console.log(error);
       return thunkAPI.rejectWithValue(error);
     }
+  },
+  {
+    condition: () => {
+      if (!getCookie('buyerId')) return false;
+    },
   }
 );
 

@@ -3,6 +3,7 @@ import { agent } from '../../api/agent';
 import { User } from '../../models/User';
 import { FieldValues } from 'react-hook-form';
 import { router } from '../../routes/Routes';
+import { toast } from 'react-toastify';
 
 export interface UserState {
   user: User | null;
@@ -11,13 +12,13 @@ export interface UserState {
 
 export const postUserLoginAsync = createAsyncThunk<User, FieldValues>(
   'account/postUserLoginAsync',
-  async (data, thunkAPI) => {
+  async (data: object, thunkAPI) => {
     try {
       const user = await agent.Account.login(data);
-      if (user) router.navigate('/');
+      localStorage.setItem('user', JSON.stringify(user));
       return user;
     } catch (error: any) {
-      return thunkAPI.rejectWithValue(error.response.data.title);
+      return thunkAPI.rejectWithValue(error);
     }
   }
 );
@@ -30,24 +31,30 @@ export const postUserRegisterAsync = createAsyncThunk<User, FieldValues>(
       if (user) router.navigate('/login');
       return user;
     } catch (error: any) {
-      console.log(error);
-      return thunkAPI.rejectWithValue({ error: error.data });
+      return thunkAPI.rejectWithValue(error);
     }
   }
 );
 
-// export const getUserAsync = createAsyncThunk<
-//   User,
-//   { productId: number; quantity: number; name: string }
-// >('cart/removeCartItemsAsync', async ({ productId, quantity }, thunkAPI) => {
-//   try {
-//     const cartItems = await agent.Cart.removeCartItems(productId, quantity);
-//     return cartItems;
-//   } catch (error: any) {
-//     console.log(error);
-//     return thunkAPI.rejectWithValue({ error: error.data });
-//   }
-// });
+export const getUserAsync = createAsyncThunk<User>(
+  'account/getUserAsync',
+  async (_, thunkAPI) => {
+    thunkAPI.dispatch(setUser(JSON.parse(localStorage.getItem('user')!)));
+    try {
+      const user = await agent.Account.getUser();
+      localStorage.setItem('user', JSON.stringify(user));
+      return user;
+    } catch (error: any) {
+      console.log(error);
+      return thunkAPI.rejectWithValue({ error: error.data });
+    }
+  },
+  {
+    condition: () => {
+      if (!localStorage.getItem('user')) return false;
+    },
+  }
+);
 
 const initialState: UserState = {
   user: null,
@@ -57,18 +64,42 @@ const initialState: UserState = {
 export const userSlice = createSlice({
   name: 'user',
   initialState,
-  reducers: {},
+  reducers: {
+    setUser: (state, action) => {
+      state.user = action.payload;
+    },
+    setLogout: (state) => {
+      state.user = null;
+      localStorage.removeItem('user');
+      router.navigate('/');
+      toast.success('Logged out successfully.');
+    },
+  },
 
   extraReducers: (builder) => {
+    builder.addCase(getUserAsync.rejected, (state) => {
+      state.user = null;
+      localStorage.removeItem('user');
+      router.navigate('/login');
+      toast.error('Token expired, please login again.');
+    });
     builder.addMatcher(
-      isAnyOf(postUserLoginAsync.pending, postUserRegisterAsync.pending),
+      isAnyOf(
+        postUserLoginAsync.pending,
+        postUserRegisterAsync.pending,
+        getUserAsync.pending
+      ),
       (state) => {
         state.status = 'pendingUserAction';
       }
     );
 
     builder.addMatcher(
-      isAnyOf(postUserLoginAsync.fulfilled, postUserRegisterAsync.fulfilled),
+      isAnyOf(
+        postUserLoginAsync.fulfilled,
+        postUserRegisterAsync.fulfilled,
+        getUserAsync.fulfilled
+      ),
       (state, action) => {
         state.user = action.payload;
         state.status = 'idle';
@@ -84,5 +115,6 @@ export const userSlice = createSlice({
     );
   },
 });
+export const { setUser, setLogout } = userSlice.actions;
 
 export default userSlice.reducer;

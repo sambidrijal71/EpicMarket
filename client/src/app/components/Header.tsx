@@ -11,6 +11,7 @@ import {
 import { Link, NavLink } from 'react-router-dom';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useAppSelector } from '../store/configureStore';
+import UserLoggedInMenu from './UserLoggedInMenu';
 
 interface Props {
   checked: boolean;
@@ -46,6 +47,7 @@ const navStyle = {
 
 const Header = ({ checked, onThemeChange }: Props) => {
   const { cart } = useAppSelector((state) => state.cart);
+  const { user } = useAppSelector((state) => state.user);
   const totalItem =
     cart && cart.items.reduce((value, item) => value + item.quantity, 0);
   return (
@@ -91,18 +93,24 @@ const Header = ({ checked, onThemeChange }: Props) => {
               >
                 <ShoppingCartIcon sx={{ color: 'secondary.dark' }} />
               </Badge>
-              {rightLinks.map(({ name, path }) => (
-                <ListItem key={name}>
-                  <Typography
-                    variant='h6'
-                    component={Link}
-                    to={`${path}`}
-                    sx={navStyle}
-                  >
-                    {name}
-                  </Typography>
-                </ListItem>
-              ))}
+              {user?.userName ? (
+                <UserLoggedInMenu user={user} />
+              ) : (
+                <>
+                  {rightLinks.map(({ name, path }) => (
+                    <ListItem key={name}>
+                      <Typography
+                        variant='h6'
+                        component={Link}
+                        to={`${path}`}
+                        sx={navStyle}
+                      >
+                        {name}
+                      </Typography>
+                    </ListItem>
+                  ))}
+                </>
+              )}
             </List>
           </Box>
         </Toolbar>

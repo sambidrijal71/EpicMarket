@@ -22,6 +22,7 @@ const Register = () => {
   const {
     register,
     handleSubmit,
+    setError,
     formState: { errors },
   } = useForm<Input>({
     defaultValues: {
@@ -32,10 +33,22 @@ const Register = () => {
     mode: 'onChange',
   });
   const dispatch = useAppDispatch();
-  const handleUserSubmit: SubmitHandler<Input> = (data) => {
-    dispatch(postUserRegisterAsync(data));
+
+  const handleUserSubmit: SubmitHandler<Input> = async (data) => {
+    try {
+      await dispatch(postUserRegisterAsync(data));
+    } catch (error) {
+      console.log(error);
+      catchErrors(error);
+    }
   };
 
+  const catchErrors = (errors: any) => {
+    errors.forEach((error: string) => {
+      if (error.includes('Username')) setError('userName', { message: error });
+      if (error.includes('Email')) setError('email', { message: error });
+    });
+  };
   return (
     <Container
       sx={{
