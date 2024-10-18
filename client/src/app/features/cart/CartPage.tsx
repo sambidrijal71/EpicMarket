@@ -22,6 +22,7 @@ import {
 import { NavLink } from 'react-router-dom';
 import { currencyConverter } from '../../utils/Utils';
 import CartSummaryPage from './CartSummaryPage';
+import NotFound from '../../components/NotFound';
 
 const CartPage = () => {
   const handleAddItem = (productId: number, quantity: number) => {
@@ -36,8 +37,10 @@ const CartPage = () => {
   };
   const { cart, status } = useAppSelector((state) => state.cart);
   const dispatch = useAppDispatch();
-  if (status.includes('pendingFetchCart') || !cart?.items)
-    <LoadingComponent message='Loading Cart...' />;
+  if (status.includes('pendingFetchCart'))
+    return <LoadingComponent message='Loading Cart...' />;
+  if (!cart?.items)
+    return <NotFound message='Please add items to cart first...' />;
   return (
     <>
       <TableContainer component={Paper}>

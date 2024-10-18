@@ -1,3 +1,5 @@
+using server.Entity;
+
 namespace server.DTOs
 {
     public class CartDto

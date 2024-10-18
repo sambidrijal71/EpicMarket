@@ -5,6 +5,7 @@ import { User } from '../models/User';
 import { Typography } from '@mui/material';
 import { setLogout } from '../features/account/accountSlice';
 import { useAppDispatch } from '../store/configureStore';
+import { clearCart } from '../features/cart/cart.Slice';
 
 interface Props {
   user: User;
@@ -58,6 +59,7 @@ const UserLoggedInMenu = ({ user }: Props) => {
           onClick={() => {
             handleClose();
             dispatch(setLogout());
+            dispatch(clearCart());
           }}
         >
           Logout

@@ -41,9 +41,11 @@ const Login = () => {
       );
       toast.success('Login successful.');
     } catch (error: any) {
-      const { title } = error.data;
+      console.log(error.response.data.title);
+      const { title } = error.response.data;
       if (title.includes('email')) setError('userName', { message: '' });
-      setError('password', { message: error.data.title });
+      if (title.includes('password'))
+        setError('password', { message: error.response.data.title });
       toast.error(error);
     }
   };
