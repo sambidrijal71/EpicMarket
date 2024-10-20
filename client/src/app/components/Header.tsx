@@ -4,7 +4,6 @@ import {
   Box,
   List,
   ListItem,
-  Switch,
   Toolbar,
   Typography,
 } from '@mui/material';
@@ -12,6 +11,7 @@ import { Link, NavLink } from 'react-router-dom';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useAppSelector } from '../store/configureStore';
 import UserLoggedInMenu from './UserLoggedInMenu';
+import SwitchButton from './SwitchButton';
 
 interface Props {
   checked: boolean;
@@ -48,8 +48,10 @@ const navStyle = {
 const Header = ({ checked, onThemeChange }: Props) => {
   const { cart } = useAppSelector((state) => state.cart);
   const { user } = useAppSelector((state) => state.user);
-  const totalItem =
-    cart && cart.items.reduce((value, item) => value + item.quantity, 0);
+  const totalItem = cart?.items.reduce(
+    (value, item) => value + item.quantity,
+    0
+  );
   return (
     <Box sx={{ mb: 4 }}>
       <AppBar position='static'>
@@ -64,7 +66,12 @@ const Header = ({ checked, onThemeChange }: Props) => {
             <Typography variant='h6' component={Link} to='/' sx={navStyle}>
               EpicMarket
             </Typography>
-            <Switch id='setMode' checked={checked} onChange={onThemeChange} />
+
+            <SwitchButton
+              sx={{ m: 1 }}
+              checked={checked}
+              onChange={onThemeChange}
+            />
           </Box>
           <Box>
             <List sx={flexProperties}>

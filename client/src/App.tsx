@@ -15,7 +15,9 @@ import { ToastContainer } from 'react-toastify';
 import { getUserAsync } from './app/features/account/accountSlice';
 
 const App = () => {
-  const [darkTheme, setDarkTheme] = useState<boolean>(true);
+  const [darkTheme, setDarkTheme] = useState<boolean>(
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+  );
   const dispatch = useAppDispatch();
 
   useEffect(() => {
