@@ -5,7 +5,7 @@ namespace server.Data
 {
     public static class DbInitializer
     {
-        public async static void Initialize(StoreContext context, UserManager<User> userManager)
+        public async static Task Initialize(StoreContext context, UserManager<User> userManager)
         {
             if (!userManager.Users.Any())
             {

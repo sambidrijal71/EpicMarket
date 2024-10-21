@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using server.DTOs;
 using server.Entity;
 
@@ -32,6 +33,11 @@ namespace server.Extensions
                     Quantity = d.Quantity,
                 }).ToList()
             };
+        }
+        public static IQueryable<Cart> RetrieveCartWithItems(this IQueryable<Cart> query, string buyerId)
+        {
+
+            return query.Include(c => c.Items).ThenInclude(p => p.Product).Where(b => b.BuyerId == buyerId);
         }
     }
 }
