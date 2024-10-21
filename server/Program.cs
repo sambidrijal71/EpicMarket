@@ -44,7 +44,7 @@ builder.Services.AddSwaggerGen(opt =>
 });
 builder.Services.AddDbContext<StoreContext>(opt => opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddIdentityCore<User>(opt => opt.User.RequireUniqueEmail = true).AddRoles<IdentityRole>().AddEntityFrameworkStores<StoreContext>();
+builder.Services.AddIdentityCore<User>(opt => opt.User.RequireUniqueEmail = true).AddRoles<Role>().AddEntityFrameworkStores<StoreContext>();
 builder.Services.AddScoped<TokenService>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
@@ -95,5 +95,5 @@ catch (Exception ex)
     logger.LogError(ex, "Problem occured while migrating the database.");
 }
 
-app.Run();
+await app.RunAsync();
 
