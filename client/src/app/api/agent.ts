@@ -86,4 +86,9 @@ const Account = {
   getUser: () => requests.get('account/getUser'),
 };
 
-export const agent = { Product, Cart, Account };
+const Orders = {
+  getOrders: () => requests.get('order'),
+  getOrder: (id: number) => requests.get(`order/${id}`),
+};
+
+export const agent = { Product, Cart, Account, Orders };

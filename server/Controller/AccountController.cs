@@ -34,7 +34,7 @@ namespace server.Controller
                 Email = user.Email,
                 UserName = user.UserName,
                 Token = await token.CreateToken(user),
-                Cart = anonCart != null ? anonCart.MapCartToDto() : userCart.MapCartToDto()
+                Cart = anonCart != null ? anonCart.MapCartToDto() : userCart?.MapCartToDto()
             });
         }
 
